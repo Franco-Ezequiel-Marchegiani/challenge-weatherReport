@@ -2,6 +2,7 @@ import React from 'react';
 import Day from './Day/Day';
 import './Grafico.css';
 import IconoEjemplo from '../../Images/Clear.png'
+import Highlights from './Highlights/Highlights';
 
 function Grafico() {
   return (
@@ -21,10 +22,7 @@ function Grafico() {
         <section>
           <h1>Today's Highlights</h1>
           <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <Highlights/>
           </div>
         </section>
       </main>
