@@ -8,8 +8,8 @@ function Grafico() {
     <section className='graficoContainerAll'>
       <main className='graficoContainerContent'>
         <div className='containerCyF'>
-          <p>°C</p>
-          <p>°F</p>
+          <p className='containerCGrafico'>°C</p>
+          <p className='containerFGrafico'>°F</p>
         </div>
         <div className='daysContainer'>
           <Day day="Tomorrow" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 

@@ -7,6 +7,37 @@
     max-width: 70%;
     margin: auto;
 }
+.containerCyF{
+    display: flex;
+    justify-content: flex-end;
+}
+.containerCGrafico{
+    background: #E7E7EB;
+    border-radius: 50%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    color: #110E3C;
+    padding: 10.48px 10.48px 9.52px 11.43px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.containerFGrafico{
+    background-color: #585676;
+    margin-right: 13px;
+    border-radius: 50%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E7E7EB;
+    padding: 10.48px 11.43px 9.52px 12.38px;
+    cursor: pointer;
+}
 .daysContainer{
     display: flex;
     justify-content: space-between;
