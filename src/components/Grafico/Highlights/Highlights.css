@@ -1,0 +1,73 @@
+.hightLigtsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hightLightItem{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #1E213A;
+    width: 100%;
+    margin: 0 0px 32px 0;
+}
+.hightLightItem h1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    color: #E7E7EB;
+    margin: 0;
+}
+.hightLightItem h1 span{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 75px;
+    color: #E7E7EB;
+    margin: 0;
+}
+.hightLightItem p{
+    margin: 0;
+    padding: 22px 0px 6px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E7E7EB;
+}
+.visibility{
+    padding-bottom: 36px;
+}
+.airPressure{
+    padding-bottom: 36px;
+}
+.containerIconHighLight{
+    display: flex;
+    align-items: center;
+}
+.fa-location-arrow{
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 9.27px 9.01px 7.36px 8.13px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(-195deg);
+}
+.containerIconHighLight p{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #E7E7EB;  
+    padding-left: 8px;  
+}
+@media only screen and (min-width: 1200px){
+
+}

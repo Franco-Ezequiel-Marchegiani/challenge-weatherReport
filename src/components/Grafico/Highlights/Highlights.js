@@ -3,24 +3,23 @@ import './Highlights.css';
 
 function Highlights() {
   return (
-    <section>
-      <div>
-        <p></p>
-        <h1></h1>
-        <div>icon<p>WSW</p></div>
+    <section className='hightLigtsContainer'>
+      <div className='hightLightItem windStatus'>
+        <p>Wind Status</p>
+        <h1>7 <span>mph</span></h1>
+        <div className='containerIconHighLight'><i className="fas fa-location-arrow"></i><p>WSW</p></div>
       </div>
-      <div>
-        <p></p>
-        <h1></h1>
-        <p>WSW</p>
+      <div className='hightLightItem humidity'>
+        <p>Humidity</p>
+        <h1>84 <span>%</span></h1>
       </div>
-      <div>
-        <p></p>
-        <h1></h1>
+      <div className='hightLightItem visibility'>
+        <p>Visibility</p>
+        <h1>6,4 <span>miles</span></h1>
       </div>
-      <div>
-        <p></p>
-        <h1></h1>
+      <div className='hightLightItem airPressure'>
+        <p>Air Pressure</p>
+        <h1>998 <span>mb</span></h1>
       </div>
     </section>
   );

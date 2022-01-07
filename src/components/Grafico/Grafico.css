@@ -46,6 +46,14 @@
 .firstChild{
     background-color: rgb(186, 0, 243);
 }
+.titleHighlights{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #E7E7EB;    
+}
 
 
 @media only screen and (min-width: 418px){
@@ -55,6 +63,9 @@
 }
 
 @media only screen and (min-width: 1200px){
+    .graficoContainerAll{
+        width: 70%;
+    }
     .graficoContainerContent{
         padding: 0;
     }

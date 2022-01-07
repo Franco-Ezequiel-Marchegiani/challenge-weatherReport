@@ -20,7 +20,7 @@ function Grafico() {
           <Day day="Wed, 10 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
         </div>
         <section>
-          <h1>Today's Highlights</h1>
+          <h1 className='titleHighlights'>Today's Highlights</h1>
           <div>
             <Highlights/>
           </div>
