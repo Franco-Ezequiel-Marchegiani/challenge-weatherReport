@@ -1,7 +1,43 @@
 .dayContainer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 177px;
+    background: #1E213A;
+    margin: 0 13px;
+}
+.dayContainer:first-child{
+    margin: 0px 13px 0px 0px;
 }
 .imageDay{
     width: 66px;
+}
+.titleDay{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E7E7EB;
+}
+.temperatureContainer{
+    display: flex;
+}
+.temperature{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E7E7EB;
+}
+.maxTemperature{
+    padding-right: 8px;
+}
+.minTemperature{
+    color: #A09FB1;
+    padding-left: 8px;
 }
