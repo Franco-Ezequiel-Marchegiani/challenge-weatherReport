@@ -6,10 +6,10 @@
 .graficoContainerContent{
     max-width: 70%;
     margin: auto;
+    padding-top: 52px;
 }
 .containerCyF{
-    display: flex;
-    justify-content: flex-end;
+    display: none;
 }
 .containerCGrafico{
     background: #E7E7EB;
@@ -40,8 +40,30 @@
 }
 .daysContainer{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .firstChild{
     background-color: rgb(186, 0, 243);
+}
+
+
+@media only screen and (min-width: 418px){
+    .daysContainer{
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .graficoContainerContent{
+        padding: 0;
+    }
+    .containerCyF{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .daysContainer{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
 }
