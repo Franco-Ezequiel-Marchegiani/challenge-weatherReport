@@ -1,0 +1,55 @@
+.sideBarContainer{
+    background-color: #1E213A;
+    background-image: url('../../Images/Cloud-background.png');
+}
+.btns-containers{
+    display: flex;
+    justify-content: space-around;
+    padding: 42px 0 80px;
+}
+.btn-searchPlaces{
+    background-color: #6E707A;
+    width: 161px;
+    height: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E7E7EB;
+    border: none;
+}
+.iconLocation{
+    background: #6E707A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 60%;
+    width: 40px;
+    height: 40px;
+}
+.fa-search-location{
+    font-size: 16px;
+    color: #E7E7EB;
+}
+.iconTimeContainer{
+    display: flex;
+    justify-content: center;
+}
+.titleTemperature{
+    padding-top: 80px;
+    text-align: center;
+}
+.numberTemperature{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 144px;
+    line-height: 169px;
+    color: #E7E7EB;
+}
+.c_temperature{
+    font-size: 80px;
+    font-weight: 300;
+    color: #9e9e9e;
+}
