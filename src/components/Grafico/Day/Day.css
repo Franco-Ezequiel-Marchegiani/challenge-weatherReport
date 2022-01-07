@@ -1,0 +1,7 @@
+.dayContainer{
+    display: flex;
+    flex-direction: column;
+}
+.imageDay{
+    width: 66px;
+}

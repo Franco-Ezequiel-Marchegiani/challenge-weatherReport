@@ -3,10 +3,10 @@ import './Day.css';
 
 function Day(props) {
   return (
-    <div>
+    <div className='dayContainer'>
         <p>{props.day}</p>
-        <img src={props.icon} alt="" />
-        <div>
+        <img className='imageDay' src={props.icon} alt="" />
+        <div className='temperatureContainer'>
             <p>{props.maxTemp}</p>
             <p>{props.minTemp}</p>
         </div>

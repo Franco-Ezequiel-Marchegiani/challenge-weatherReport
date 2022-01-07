@@ -5,13 +5,13 @@ import IconoEjemplo from '../../Images/Clear.png'
 
 function Grafico() {
   return (
-    <section>
-      <main>
+    <section className='graficoContainerAll'>
+      <main className='graficoContainerContent'>
         <div className='containerCyF'>
           <p>°C</p>
           <p>°F</p>
         </div>
-        <div>
+        <div className='daysContainer'>
           <Day day="Tomorrow" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
           <Day day="Su, 7 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
           <Day day="Mon, 8 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 

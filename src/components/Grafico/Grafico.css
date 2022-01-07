@@ -1,0 +1,12 @@
+.graficoContainerAll{
+    background-color: #100E1D;
+    width: 100%;
+    color: #E7E7EB;;
+}
+.graficoContainerContent{
+    max-width: 70%;
+    margin: auto;
+}
+.daysContainer{
+    display: flex;
+}
