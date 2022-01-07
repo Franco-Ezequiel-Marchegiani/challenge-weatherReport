@@ -1,6 +1,10 @@
 .sideBarContainer{
     background-color: #1E213A;
     background-image: url('../../Images/Cloud-background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px 20%;
 }
 .btns-containers{
     display: flex;
