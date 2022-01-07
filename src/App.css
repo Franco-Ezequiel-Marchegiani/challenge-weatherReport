@@ -1,8 +1,8 @@
 
 
 @media only screen and (min-width: 1200px){
-    .containerSidebar_Grafico{
-      display: flex;
-      flex-direction: row;
-    }
+  .containerSidebar_Grafico{
+    display: flex;
+    flex-direction: row;
+  }
 }

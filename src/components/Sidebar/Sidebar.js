@@ -13,10 +13,10 @@ function SideBar() {
       </div>
       <h1 className='titleTemperature'><span className='numberTemperature'>15</span><span className='c_temperature'>°c</span></h1>
       <h2 className='subTitle'>Clear</h2>
-      <p className='textDateToday'>Today ° Fri, 5 Jun</p>
+      <p className='textDateToday'>Today <span className='pointSideBar'>•</span> Fri, 5 Jun</p>
       <div className='containerUbication'>
       <i className="fas fa-map-marker-alt"></i>
-          <p>Helsinki</p>
+        <p>Helsinki</p>
       </div>
     </section>
   );
