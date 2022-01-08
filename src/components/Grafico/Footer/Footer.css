@@ -4,6 +4,17 @@ footer p{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
+}
+.linkProfileFooter{
+    text-decoration: none;
+    color: #A09FB1;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1200px){
+    footer p{
+        padding-top: 180px;
+    }
 }
