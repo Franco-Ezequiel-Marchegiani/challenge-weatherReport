@@ -72,4 +72,10 @@
     .hightLightItem{
         width: 45%;
     }
+    .windStatus{
+        height: 204px;
+    }
+    .humidity{
+        height: 204px;
+    }
 }
