@@ -6,6 +6,17 @@ import Highlights from './Highlights/Highlights';
 import Footer from './Footer/Footer';
 
 function Grafico() {
+  /* 
+  A TENER EN CUENTA EN LA API DEL CLIMA:
+Este link es la barra de búsqueda para buscar por localidad:
+https://www.metaweather.com/api/location/search/?query=Buenos%20Aires
+
+De ahí, se obtiene un número, que está en el "woeid".
+Con ese número, se coloca:
+https://www.metaweather.com/api/location/{acá}/
+
+Y ahí se obtiene los datos del clima según la locación
+ */
   return (
     <section className='graficoContainerAll'>
       <main className='graficoContainerContent'>
