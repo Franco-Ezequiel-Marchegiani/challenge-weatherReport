@@ -3,6 +3,7 @@ import Day from './Day/Day';
 import './Grafico.css';
 import IconoEjemplo from '../../Images/Clear.png'
 import Highlights from './Highlights/Highlights';
+import Footer from './Footer/Footer';
 
 function Grafico() {
   return (
@@ -26,6 +27,7 @@ function Grafico() {
           </div>
         </section>
       </main>
+      <Footer/>
     </section>
   );
 }
