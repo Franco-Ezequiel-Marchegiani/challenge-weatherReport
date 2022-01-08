@@ -69,5 +69,7 @@
     padding-left: 8px;  
 }
 @media only screen and (min-width: 1200px){
-
+    .hightLightItem{
+        width: 45%;
+    }
 }
