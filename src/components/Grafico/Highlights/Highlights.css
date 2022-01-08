@@ -69,6 +69,44 @@
     padding-left: 8px;
     padding-bottom: 20px;  
 }
+.containerBarProgress{
+    display: flex;
+    width: 229px;
+    padding: 0;
+    justify-content: space-between;
+}
+.containerBarProgress p{
+    padding: 0 0 2px 0;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A09FB1;
+}
+.containerBarProgressPorcentaje{
+    display: flex;
+    width: 229px;
+    justify-content: flex-end;
+}
+.containerBarProgressPorcentaje p{
+    padding: 4px 0 0 0;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A09FB1;
+}
+.progressBar{
+    width: 229px;
+    height: 8px;
+    background-color: #E7E7EB;
+}
+.progress-bar{
+    background-color: #FFEC65;
+    color: black;
+}
 @media only screen and (min-width: 1200px){
     .hightLightItem{
         width: 45%;

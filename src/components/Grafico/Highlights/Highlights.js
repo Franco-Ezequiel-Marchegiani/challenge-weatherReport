@@ -3,9 +3,9 @@ import './Highlights.css';
 import { ProgressBar } from 'react-bootstrap';
 
 function Highlights() {
-  const now = 60;
+  const now = 84;
 
-  const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
+  const progressInstance = <ProgressBar now={now} className='progressBar' />;
 
   return (
     <section className='hightLigtsContainer'>
@@ -17,7 +17,16 @@ function Highlights() {
       <div className='hightLightItem humidity'>
         <p>Humidity</p>
         <h1>84 <span>%</span></h1>
+        <div className='containerBarProgress'>
+          <p>0</p>
+          <p>50</p>
+          <p>100</p>
+        </div>
         {progressInstance}
+        <div className='containerBarProgressPorcentaje'>
+          <p>%</p>
+        </div>
+        
       </div>
       <div className='hightLightItem visibility'>
         <p>Visibility</p>
