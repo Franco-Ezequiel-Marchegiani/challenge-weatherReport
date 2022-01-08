@@ -16,6 +16,10 @@ Con ese número, se coloca:
 https://www.metaweather.com/api/location/{acá}/
 
 Y ahí se obtiene los datos del clima según la locación
+
+
+Para obtener los datos del "Today's Hightlights", se tiene que extraer del PRIMER item del array
+Se obtiene un array (que es la información de los próximos 6 días)
  */
   return (
     <section className='graficoContainerAll'>
