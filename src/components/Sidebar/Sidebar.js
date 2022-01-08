@@ -8,6 +8,9 @@ function SideBar() {
     console.log("Hola");
   }
   return (
+    /* Usar este video de referencia para lograr el navbar que está oculto
+    https://www.youtube.com/watch?v=CXa0f4-dWi4
+     */
     <section className='sideBarContainer'>
       <div className='btns-containers'>
           <button onClick={placeSearched} ref={btnSearch} className='btn-searchPlaces'>Search for places</button>
