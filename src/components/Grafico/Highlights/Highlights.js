@@ -1,7 +1,12 @@
 import React from 'react';
 import './Highlights.css';
+import { ProgressBar } from 'react-bootstrap';
 
 function Highlights() {
+  const now = 60;
+
+  const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
+
   return (
     <section className='hightLigtsContainer'>
       <div className='hightLightItem windStatus'>
@@ -12,6 +17,7 @@ function Highlights() {
       <div className='hightLightItem humidity'>
         <p>Humidity</p>
         <h1>84 <span>%</span></h1>
+        {progressInstance}
       </div>
       <div className='hightLightItem visibility'>
         <p>Visibility</p>
