@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './Sidebar.css';
+import DOMPurify from 'dompurify';
 import IconoEjemplo from '../../Images/Clear.png'
 function SideBar() {
+  const btnSearch = useRef();
+  const placeSearched = () =>{
+    console.log("Hola");
+  }
   return (
     <section className='sideBarContainer'>
       <div className='btns-containers'>
-          <button className='btn-searchPlaces'>Search for places</button>
+          <button onClick={placeSearched} ref={btnSearch} className='btn-searchPlaces'>Search for places</button>
           <button className='iconLocation'><i className="fas fa-search-location"></i></button>
       </div>
       <div className='iconTimeContainer'>
