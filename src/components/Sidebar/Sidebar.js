@@ -10,6 +10,8 @@ function SideBar() {
   return (
     /* Usar este video de referencia para lograr el navbar que está oculto
     https://www.youtube.com/watch?v=CXa0f4-dWi4
+    Y por si quiero re-ver el video de seguridad usé este de referencia:
+    https://www.youtube.com/watch?v=Cj7-i-S4TwA
      */
     <section className='sideBarContainer'>
       <div className='btns-containers'>
