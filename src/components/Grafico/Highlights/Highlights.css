@@ -71,7 +71,7 @@
 }
 .containerBarProgress{
     display: flex;
-    width: 229px;
+    width: 170px;
     padding: 0;
     justify-content: space-between;
 }
@@ -86,7 +86,7 @@
 }
 .containerBarProgressPorcentaje{
     display: flex;
-    width: 229px;
+    width: 170px;
     justify-content: flex-end;
 }
 .containerBarProgressPorcentaje p{
@@ -99,13 +99,24 @@
     color: #A09FB1;
 }
 .progressBar{
-    width: 229px;
+    width: 170px;
     height: 8px;
     background-color: #E7E7EB;
 }
 .progress-bar{
     background-color: #FFEC65;
     color: black;
+}
+@media only screen and (min-width: 400px){
+    .containerBarProgress{
+        width: 229px;
+    }
+    .containerBarProgressPorcentaje{
+        width: 229px;
+    }
+    .progressBar{
+        width: 229px;
+    }
 }
 @media only screen and (min-width: 1200px){
     .hightLightItem{
@@ -116,5 +127,14 @@
     }
     .humidity{
         height: 204px;
+    }
+    .containerBarProgress{
+        width: 229px;
+    }
+    .containerBarProgressPorcentaje{
+        width: 229px;
+    }
+    .progressBar{
+        width: 229px;
     }
 }
