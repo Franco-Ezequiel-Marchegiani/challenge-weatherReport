@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Sidebar.css';
 import IconoEjemplo from '../../Images/Clear.png'
-function SideBar() {
+function SideBar(props) {
   const [sideBar, setSideBar] = useState(true);
   const changeHideSidebar = () =>{
     setSideBar(false)
@@ -9,6 +9,8 @@ function SideBar() {
   const showOriginalSidebar = () =>{
     setSideBar(true)
   }
+  /* Comunicación hijo a Padre */
+  const {e, propPrueba} = props;  
   return (
     <section className='sideBarContainer'>
     {sideBar ? 
@@ -35,7 +37,7 @@ function SideBar() {
       <div className='buscadorContainer'>
       <i className="fas fa-search"></i>
       <input className='inputSearch' type="text" placeholder='Buscar ubicación'/>
-      <button className='btn-search'>Buscar</button>
+      <button onClick={() => propPrueba(e)} className='btn-search'>Buscar</button>
       </div>
       <div className='BusquedasContainer'>
         <p>Buenos Aires  <span className='arrowTitle'>{'>'}</span></p>
