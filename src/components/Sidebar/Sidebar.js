@@ -13,7 +13,7 @@ function SideBar() {
      */
     <section className='sideBarContainer'>
     {/* SideBar visible */}
-      <section className='sideBarDefault'>
+      {/* <section className='sideBarDefault'>
           <div className='btns-containers'>
               <button onClick={showSidebar} className='btn-searchPlaces'>Search for places</button>
               <button className='iconLocation'><i className="fas fa-search-location"></i></button>
@@ -28,9 +28,17 @@ function SideBar() {
           <i className="fas fa-map-marker-alt"></i>
             <p>Helsinki</p>
           </div> 
-      </section>
+      </section> */}
       <section className='sideBarSearch'>
-
+      <div>
+      <input className='inputSearch' type="text" />
+      <button className='btn-search'>Buscar</button>
+      </div>
+      <div className='Busquedas Container'>
+        <p>Buenos Aires</p>
+        <p>Santiago</p>
+        <p>Lima</p>
+      </div>
       </section>
     </section>
   );
