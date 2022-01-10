@@ -1,21 +1,20 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import './Sidebar.css';
-import DOMPurify from 'dompurify';
 import IconoEjemplo from '../../Images/Clear.png'
 function SideBar() {
-  const [sideBar, setSideBar] = useState(false);
-  const showSidebar = () => setSideBar(!sideBar); 
+  const [sideBar, setSideBar] = useState(true);
+  const changeHideSidebar = () =>{
+    setSideBar(false)
+  }
+  const showOriginalSidebar = () =>{
+    setSideBar(true)
+  }
   return (
-    /* Usar este video de referencia para lograr el navbar que está oculto
-    https://www.youtube.com/watch?v=CXa0f4-dWi4
-    Y por si quiero re-ver el video de seguridad usé este de referencia:
-    https://www.youtube.com/watch?v=Cj7-i-S4TwA
-     */
     <section className='sideBarContainer'>
-    {/* SideBar visible */}
-      {/* <section className='sideBarDefault'>
+    {sideBar ? 
+    <section className='sideBarDefault'>
           <div className='btns-containers'>
-              <button onClick={showSidebar} className='btn-searchPlaces'>Search for places</button>
+              <button onClick={changeHideSidebar} className='btn-searchPlaces'>Search for places</button>
               <button className='iconLocation'><i className="fas fa-search-location"></i></button>
           </div>
           <div className='iconTimeContainer'>
@@ -28,10 +27,10 @@ function SideBar() {
           <i className="fas fa-map-marker-alt"></i>
             <p>Helsinki</p>
           </div> 
-      </section> */}
+      </section> : 
       <section className='sideBarSearch'>
       <div className='closeSidebarContainer'>
-      <i className="fas fa-times"></i>
+      <i className="fas fa-times" onClick={showOriginalSidebar}></i>
       </div>
       <div className='buscadorContainer'>
       <i className="fas fa-search"></i>
@@ -44,7 +43,8 @@ function SideBar() {
         <p>Lima <span className='arrowTitle'>{'>'}</span></p>
         
       </div>
-      </section>
+      </section>}
+  
     </section>
   );
 }
