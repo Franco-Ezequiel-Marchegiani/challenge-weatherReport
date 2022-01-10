@@ -30,8 +30,12 @@ function SideBar() {
           </div> 
       </section> */}
       <section className='sideBarSearch'>
-      <div>
-      <input className='inputSearch' type="text" />
+      <div className='closeSidebarContainer'>
+      <i className="fas fa-times"></i>
+      </div>
+      <div className='buscadorContainer'>
+      <i className="fas fa-search"></i>
+      <input className='inputSearch' type="text" placeholder='Buscar ubicación'/>
       <button className='btn-search'>Buscar</button>
       </div>
       <div className='Busquedas Container'>

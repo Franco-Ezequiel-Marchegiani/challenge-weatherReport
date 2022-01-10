@@ -1,5 +1,7 @@
 .sideBarContainer{
     background-color: #1E213A;
+    display: flex;
+    flex-direction: column;
 }
 .sideBarDefault{
     background-image: url('../../Images/Cloud-background.png');
@@ -103,6 +105,53 @@
     color: #88869D;
     padding-right: 8px;
 }
+/* SideBar secundario */
+.closeSidebarContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+.fa-times{
+    color: #E7E7EB;
+    font-size: 20px;
+    padding: 17.41px 17.41px 0px 0px;
+}
+.buscadorContainer{
+    position: relative;
+}
+.inputSearch{
+    width: 70%;
+    height: 48px;
+    border: 1px solid #E7E7EB;
+    background: #1E213A;
+    padding-left: 49px;
+    margin: 0 12px;
+}
+.fa-search{
+    color: #616475;
+    position: absolute;
+    top: 15px;
+    left: 28px;
+}
+.btn-search{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E7E7EB;
+    background: #3C47E9;
+    border: none;
+    width: 20%;
+height: 48px;
+}
+@media only screen and (min-width: 600px){
+    .inputSearch{
+        width: 80%;
+    }
+    .btn-search{
+        width: 15%;
+    }
+}
 @media only screen and (min-width: 1200px){
     .sideBarContainer{
         width: 30%;
@@ -112,5 +161,22 @@
       }
       .containerUbication{
         padding-bottom: 40px;
+    }
+
+    /* SideBar secundario */
+    .fa-times{
+        color: #E7E7EB;
+        font-size: 20px;
+        padding: 24.41px 31.41px 0px 0px;
+    }
+    .buscadorContainer{
+        max-width: 90%;
+        margin: auto;
+    }
+    .inputSearch{
+        width: 60%;
+    }
+    .btn-search{
+        width: 25%;
     }
 }
