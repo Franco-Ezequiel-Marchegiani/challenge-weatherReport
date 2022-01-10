@@ -38,10 +38,11 @@ function SideBar() {
       <input className='inputSearch' type="text" placeholder='Buscar ubicación'/>
       <button className='btn-search'>Buscar</button>
       </div>
-      <div className='Busquedas Container'>
-        <p>Buenos Aires</p>
-        <p>Santiago</p>
-        <p>Lima</p>
+      <div className='BusquedasContainer'>
+        <p>Buenos Aires  <span className='arrowTitle'>{'>'}</span></p>
+        <p>Santiago <span className='arrowTitle'>{'>'}</span></p>
+        <p>Lima <span className='arrowTitle'>{'>'}</span></p>
+        
       </div>
       </section>
     </section>

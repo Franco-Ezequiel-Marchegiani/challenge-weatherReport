@@ -113,7 +113,7 @@
 .fa-times{
     color: #E7E7EB;
     font-size: 20px;
-    padding: 17.41px 17.41px 0px 0px;
+    padding: 17.41px 17.41px 29px 0px;
 }
 .buscadorContainer{
     position: relative;
@@ -124,7 +124,7 @@
     border: 1px solid #E7E7EB;
     background: #1E213A;
     padding-left: 49px;
-    margin: 0 12px;
+    margin: 0px 12px 38px 12px;
 }
 .fa-search{
     color: #616475;
@@ -142,7 +142,36 @@
     background: #3C47E9;
     border: none;
     width: 20%;
-height: 48px;
+    height: 48px;
+}
+.BusquedasContainer{
+    color: #E7E7EB;
+}
+.BusquedasContainer p{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 14px 4%;
+    padding: 23px 80% 22px 12px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E7E7EB;
+}
+.arrowTitle{
+    visibility: hidden;
+    position: absolute;
+    right: 16px;
+    color: #616475;
+}
+ .BusquedasContainer p:hover .arrowTitle{
+    visibility: visible;
+} 
+.BusquedasContainer p:hover{
+    border: 1px solid #616475;
+    box-sizing: border-box;
 }
 @media only screen and (min-width: 600px){
     .inputSearch{
@@ -150,6 +179,9 @@ height: 48px;
     }
     .btn-search{
         width: 15%;
+    }
+    .BusquedasContainer p{
+        margin: 14px 2%;
     }
 }
 @media only screen and (min-width: 1200px){
@@ -167,7 +199,7 @@ height: 48px;
     .fa-times{
         color: #E7E7EB;
         font-size: 20px;
-        padding: 24.41px 31.41px 0px 0px;
+        padding: 24.41px 31.41px 29px 0px;
     }
     .buscadorContainer{
         max-width: 90%;
@@ -177,6 +209,13 @@ height: 48px;
         width: 60%;
     }
     .btn-search{
-        width: 25%;
+        width: 30%;
+    }
+    .BusquedasContainer{
+        max-width: 90%;
+        margin: auto;
+    }
+    .BusquedasContainer p{
+        max-width: 90%;
     }
 }
