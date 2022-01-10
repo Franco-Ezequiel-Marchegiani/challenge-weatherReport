@@ -1,5 +1,7 @@
 .sideBarContainer{
     background-color: #1E213A;
+}
+.sideBarDefault{
     background-image: url('../../Images/Cloud-background.png');
     background-size: 100%;
     background-repeat: no-repeat;
