@@ -36,8 +36,8 @@ function SideBar(props) {
       </div>
       <div className='buscadorContainer'>
       <i className="fas fa-search"></i>
-      <input className='inputSearch' type="text" placeholder='Buscar ubicación'/>
-      <button onClick={() => propPrueba(e)} className='btn-search'>Buscar</button>
+      <input onChange={() => propPrueba(e)} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
+      <button className='btn-search'>Buscar</button>
       </div>
       <div className='BusquedasContainer'>
         <p>Buenos Aires  <span className='arrowTitle'>{'>'}</span></p>
