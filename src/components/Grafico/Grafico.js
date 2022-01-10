@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Day from './Day/Day';
 import './Grafico.css';
 import IconoEjemplo from '../../Images/Clear.png'
@@ -6,6 +6,18 @@ import Highlights from './Highlights/Highlights';
 import Footer from './Footer/Footer';
 
 function Grafico() {
+  const [clima, setClima] = useState();
+
+  useEffect( () =>{
+      console.log("UseEffect");
+      apiDatos()
+  },[])
+  const apiDatos = async() =>{
+    //Json con los datos de Buenos Aires
+    const data = await fetch(`https://www.metaweather.com/api/location/468739/`);
+    const climaJson =await data.json()
+    console.log(climaJson);
+  }
   /* 
   A TENER EN CUENTA EN LA API DEL CLIMA:
 Este link es la barra de búsqueda para buscar por localidad:
