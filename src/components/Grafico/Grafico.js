@@ -6,7 +6,7 @@ import Highlights from './Highlights/Highlights';
 import Footer from './Footer/Footer';
 
 function Grafico() {
-  const [clima, setClima] = useState();
+  const [climaSemanal, setClimaSemanal] = useState([]);
 
   useEffect( () =>{
       console.log("UseEffect");
@@ -16,23 +16,10 @@ function Grafico() {
     //Json con los datos de Buenos Aires
     const data = await fetch(`https://www.metaweather.com/api/location/468739/`);
     const climaJson =await data.json()
-    console.log(climaJson);
+    console.log(climaJson.consolidated_weather);
+    setClimaSemanal(climaJson.consolidated_weather)
   }
-  /* 
-  A TENER EN CUENTA EN LA API DEL CLIMA:
-Este link es la barra de búsqueda para buscar por localidad:
-https://www.metaweather.com/api/location/search/?query=Buenos%20Aires
-
-De ahí, se obtiene un número, que está en el "woeid".
-Con ese número, se coloca:
-https://www.metaweather.com/api/location/{acá}/
-
-Y ahí se obtiene los datos del clima según la locación
-
-
-Para obtener los datos del "Today's Hightlights", se tiene que extraer del PRIMER item del array
-Se obtiene un array (que es la información de los próximos 6 días)
- */
+  console.log(climaSemanal);
   return (
     <section className='graficoContainerAll'>
       <main className='graficoContainerContent'>
@@ -41,8 +28,13 @@ Se obtiene un array (que es la información de los próximos 6 días)
           <p className='containerFGrafico'>°F</p>
         </div>
         <div className='daysContainer'>
+        {/*  {climaSemanal.map(tiempoDia =>{
           <Day day="Tomorrow" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
-          <Day day="Su, 7 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
+        })}  */}
+          {climaSemanal.map( (climaDia, i) =>{
+            <Day day={climaDia.applicable_date} icon={IconoEjemplo} maxTemp={climaDia.max_temp} minTemp={climaDia.min_temp}/> 
+          })}
+          
           <Day day="Mon, 8 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
           <Day day="Tue, 9 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/>       
           <Day day="Wed, 10 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
