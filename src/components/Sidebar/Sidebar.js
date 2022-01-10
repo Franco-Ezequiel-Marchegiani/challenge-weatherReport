@@ -15,7 +15,7 @@ function SideBar() {
     <section className='sideBarDefault'>
           <div className='btns-containers'>
               <button onClick={changeHideSidebar} className='btn-searchPlaces'>Search for places</button>
-              <button className='iconLocation'><i className="fas fa-search-location"></i></button>
+              <button onClick={changeHideSidebar} className='iconLocation'><i className="fas fa-search-location"></i></button>
           </div>
           <div className='iconTimeContainer'>
           <img className='iconTime' src={IconoEjemplo} alt="" />
