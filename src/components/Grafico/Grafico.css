@@ -78,6 +78,7 @@
     .daysContainer{
         flex-wrap: nowrap;
         justify-content: space-around;
+        align-content: space-between;
     }
     .titleHighlights{
         padding: 56px 0px 24px;

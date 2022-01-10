@@ -22,6 +22,7 @@
 }
 .temperatureContainer{
     display: flex;
+    padding: 24px 0px 0px 0px;
 }
 .temperature{
     font-family: Raleway;
