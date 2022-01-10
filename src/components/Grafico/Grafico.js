@@ -31,13 +31,11 @@ function Grafico() {
         {/*  {climaSemanal.map(tiempoDia =>{
           <Day day="Tomorrow" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
         })}  */}
+        { climaSemanal.length === 0 && <p>cargando...</p> }
           {climaSemanal.map( (climaDia, i) =>{
-            <Day day={climaDia.applicable_date} icon={IconoEjemplo} maxTemp={climaDia.max_temp} minTemp={climaDia.min_temp}/> 
+            return <Day day={climaDia.applicable_date} icon={IconoEjemplo} maxTemp={climaDia.max_temp} minTemp={climaDia.min_temp}/> 
           })}
           
-          <Day day="Mon, 8 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
-          <Day day="Tue, 9 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/>       
-          <Day day="Wed, 10 Jun" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
         </div>
         <section>
           <h1 className='titleHighlights'>Today's Highlights</h1>
