@@ -56,7 +56,7 @@ function Highlights() {
           </div>
           <div className='hightLightItem airPressure'>
             <p>Presión del aire</p>
-            <h1>{climaSemanal[0].air_pressure} <span>mb</span></h1>
+            <h1>{climaSemanal[0].air_pressure.toFixed(0)} <span>mb</span></h1>
           </div>
       </section>
       }
