@@ -33,7 +33,7 @@ function Grafico() {
         })}  */}
         { climaSemanal.length === 0 && <p>cargando...</p> }
           {climaSemanal.map( (climaDia, i) =>{
-            return <Day day={climaDia.applicable_date} icon={climaDia.weather_state_name} maxTemp={climaDia.max_temp} minTemp={climaDia.min_temp}/> 
+            return <Day key={climaDia.id} day={climaDia.applicable_date} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp} minTemp={climaDia.min_temp}/> 
           })}
           
         </div>
