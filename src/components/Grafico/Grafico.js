@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Day from './Day/Day';
 import './Grafico.css';
-import IconoEjemplo from '../../Images/Clear.png'
 import Highlights from './Highlights/Highlights';
 import Footer from './Footer/Footer';
 
