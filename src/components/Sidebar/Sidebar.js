@@ -25,7 +25,7 @@ function SideBar(props) {
     setClimaDia(climaJson.consolidated_weather)
     setCargando(false)
   };
-  console.log(climaDia[0].weather_state_abbr);
+  console.log(climaDia[0].the_temp);
 
   /* Al hacer la bara de busqueda dividirlo por partes:
   La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
@@ -48,8 +48,8 @@ function SideBar(props) {
           { cargando === true && <Spinner animation="grow" className='spinnerCarga' /> }
           <img className='iconTime' src={nombreImagen + climaDia[0].weather_state_abbr + extension} alt="Icono Clima" />
           </div>
-          <h1 className='titleTemperature'><span className='numberTemperature'>15</span><span className='c_temperature'>°c</span></h1>
-          <h2 className='subTitle'>Clear</h2>
+          <h1 className='titleTemperature'><span className='numberTemperature'>{climaDia[0].the_temp}</span><span className='c_temperature'>°c</span></h1>
+          <h2 className='subTitle'>{climaDia[0].weather_state_name}</h2>
           <p className='textDateToday'>Today <span className='pointSideBar'>•</span> Fri, 5 Jun</p>
           <div className='containerUbication'>
           <i className="fas fa-map-marker-alt"></i>
