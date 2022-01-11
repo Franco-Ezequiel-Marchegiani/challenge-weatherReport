@@ -33,7 +33,7 @@ function Highlights() {
         <section className='hightLigtsContainer'>
           <div className='hightLightItem windStatus'>
             <p>Estado del viento</p>
-            <h1>{climaSemanal[0].wind_speed} <span>mph</span></h1>
+            <h1>{climaSemanal[0].wind_speed.toFixed(1)} <span>mph</span></h1>
             <div className='containerIconHighLight'><i className="fas fa-location-arrow"></i><p>WSW</p></div>
           </div>
           <div className='hightLightItem humidity'>
