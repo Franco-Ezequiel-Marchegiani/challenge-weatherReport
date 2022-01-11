@@ -6,6 +6,7 @@ function SideBar(props) {
   const [climaDia, setClimaDia] = useState([""]);
   const [cargando, setCargando] = useState(true);
 
+  const [infoClimaGeneral, setInfoClimaGeneral] = useState([]);
   /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
     setSideBar(false)
@@ -16,18 +17,27 @@ function SideBar(props) {
 
   /* Llamado API */
   useEffect( () =>{
-      console.log("UseEffect");
       apiDatos()
   },[]);
   const apiDatos = async() =>{
     //Json con los datos de Buenos Aires
     const data = await fetch(`/api/location/468739/`);
     const climaJson =await data.json()
-    console.log(climaJson.consolidated_weather[0]);
     setClimaDia(climaJson.consolidated_weather)
     setCargando(false)
   };
-  console.log(climaDia[0].the_temp);
+
+  useEffect( () =>{
+      apiDatosGenerales()
+  },[]);
+  const apiDatosGenerales = async() =>{
+    //Json con los datos de Buenos Aires
+    const data = await fetch(`/api/location/468739/`);
+    const climaJson =await data.json()
+    console.log(climaJson.title);
+    setInfoClimaGeneral(climaJson)
+    setCargando(false)
+  };
 
   /* Al hacer la bara de busqueda dividirlo por partes:
   La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
@@ -43,7 +53,6 @@ function SideBar(props) {
 
   /* Configuracion Fecha */
   const fechaActualizada = new Date(climaDia[0].applicable_date);
-  console.log(fechaActualizada);
   const optionsDate = {weekday: 'long', month: 'long', day: 'numeric'}
   return (
     <section className='sideBarContainer'>
@@ -62,7 +71,7 @@ function SideBar(props) {
           <p className='textDateToday'>Today <span className='pointSideBar'>•</span> {cargando === true ? "" : fechaActualizada.toLocaleDateString("es-ES", optionsDate) }</p>
           <div className='containerUbication'>
           <i className="fas fa-map-marker-alt"></i>
-            <p>Helsinki</p>
+            <p>{cargando === true ? <p>Cargando...</p> : infoClimaGeneral.title}</p>
           </div> 
       </section> : 
       <section className='sideBarSearch'>

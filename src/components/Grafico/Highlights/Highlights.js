@@ -7,7 +7,6 @@ function Highlights() {
   const [cargando, setCargando] = useState(true);
 
   useEffect( () =>{
-      console.log("UseEffect");
       apiDatos()
   },[]);
   const apiDatos = async() =>{
@@ -17,7 +16,6 @@ function Highlights() {
     setClimaSemanal(climaJson.consolidated_weather)
     setCargando(false)
   };
-  console.log(climaSemanal[0].humidity);
 
   if(cargando) return <h1>Cargando...</h1>
   //Bootstrap barra Humedad
