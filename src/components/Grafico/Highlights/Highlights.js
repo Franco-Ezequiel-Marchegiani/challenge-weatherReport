@@ -22,7 +22,7 @@ function Highlights() {
   console.log(climaSemanal[0].humidity);
 
   if(cargando) return <h1>Cargando...</h1>
-
+  //Bootstrap barra Humedad
   const now = climaSemanal[0].humidity;
   const progressInstance = <ProgressBar now={now} className='progressBar' />;
 
