@@ -9,6 +9,11 @@ function SideBar(props) {
   const showOriginalSidebar = () =>{
     setSideBar(true)
   }
+  /* Al hacer la bara de busqueda dividirlo por partes:
+  La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
+  Luego, para que se actualicen los datos, el usuario tiene que CLICKEAR cada pais para que aplicara.
+  Ej, está el listado de Buenos Aires, Monte video & Lima, la barra de búsqueda sirve para buscar entre
+  ellos, y una vez que se clickeen, ahí se verán modificados */
   /* Comunicación hijo a Padre */
   const {e, propPrueba} = props;  
   return (
@@ -16,7 +21,7 @@ function SideBar(props) {
     {sideBar ? 
     <section className='sideBarDefault'>
           <div className='btns-containers'>
-              <button onClick={changeHideSidebar} className='btn-searchPlaces'>Search for places</button>
+              <button onClick={changeHideSidebar} className='btn-searchPlaces'>Buscar por zonas</button>
               <button onClick={changeHideSidebar} className='iconLocation'><i className="fas fa-search-location"></i></button>
           </div>
           <div className='iconTimeContainer'>
