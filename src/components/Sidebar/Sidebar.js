@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import './Sidebar.css';
-import IconoEjemplo from '../../Images/Clear.png'
+import { Spinner } from 'react-bootstrap';
 function SideBar(props) {
   const [sideBar, setSideBar] = useState(true);
   const [climaDia, setClimaDia] = useState([""]);
+  const [cargando, setCargando] = useState(true);
 
   const changeHideSidebar = () =>{
     setSideBar(false)
@@ -22,6 +23,7 @@ function SideBar(props) {
     const climaJson =await data.json()
     console.log(climaJson.consolidated_weather[0]);
     setClimaDia(climaJson.consolidated_weather)
+    setCargando(false)
   };
   console.log(climaDia[0].weather_state_abbr);
 
@@ -43,6 +45,7 @@ function SideBar(props) {
               <button onClick={changeHideSidebar} className='iconLocation'><i className="fas fa-search-location"></i></button>
           </div>
           <div className='iconTimeContainer'>
+          { cargando === true && <Spinner animation="grow" className='spinnerCarga' /> }
           <img className='iconTime' src={nombreImagen + climaDia[0].weather_state_abbr + extension} alt="Icono Clima" />
           </div>
           <h1 className='titleTemperature'><span className='numberTemperature'>15</span><span className='c_temperature'>°c</span></h1>

@@ -26,9 +26,6 @@ function Grafico() {
           <p className='containerFGrafico'>°F</p>
         </div>
         <div className='daysContainer'>
-        {/*  {climaSemanal.map(tiempoDia =>{
-          <Day day="Tomorrow" icon={IconoEjemplo} maxTemp="16" minTemp="11"/> 
-        })}  */}
         { climaSemanal.length === 0 && <p>cargando...</p> }
           {climaSemanal.map( (climaDia, i) =>{
             const fechaActualizada = new Date(climaDia.applicable_date);

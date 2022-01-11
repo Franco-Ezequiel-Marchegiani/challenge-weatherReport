@@ -56,9 +56,18 @@
 .iconTimeContainer{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .iconTime{
     width: 202px;
+}
+.spinnerCarga{
+    width: 202px;
+    height: 202px;
+    display: table;
+    margin: 0 auto;
+    color: #9e9e9e;
 }
 .titleTemperature{
     padding-top: 80px;
