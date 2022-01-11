@@ -23,7 +23,7 @@ function Highlights() {
 
   if(cargando) return <h1>Cargando...</h1>
 
-  const now = 84;
+  const now = climaSemanal[0].humidity;
   const progressInstance = <ProgressBar now={now} className='progressBar' />;
 
   return (
