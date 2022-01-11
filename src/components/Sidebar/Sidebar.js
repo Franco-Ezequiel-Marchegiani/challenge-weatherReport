@@ -26,7 +26,7 @@ function SideBar(props) {
     setClimaDia(climaJson.consolidated_weather)
     setCargando(false)
   };
-
+  /* Llamada API para el título */
   useEffect( () =>{
       apiDatosGenerales()
   },[]);
@@ -34,7 +34,6 @@ function SideBar(props) {
     //Json con los datos de Buenos Aires
     const data = await fetch(`/api/location/468739/`);
     const climaJson =await data.json()
-    console.log(climaJson.title);
     setInfoClimaGeneral(climaJson)
     setCargando(false)
   };
