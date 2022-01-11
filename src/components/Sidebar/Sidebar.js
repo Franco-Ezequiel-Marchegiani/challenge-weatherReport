@@ -59,7 +59,7 @@ function SideBar(props) {
           </div>
           <h1 className='titleTemperature'><span className='numberTemperature'>{cargando === true ? <p className='numberTemperatureLoading'>...</p> : climaDia[0].the_temp.toFixed(0) }</span><span className='c_temperature'>°c</span></h1>
           <h2 className='subTitle'>{climaDia[0].weather_state_name}</h2>
-          <p className='textDateToday'>Today <span className='pointSideBar'>•</span> {fechaActualizada.toLocaleDateString("es-ES", optionsDate)}</p>
+          <p className='textDateToday'>Today <span className='pointSideBar'>•</span> {cargando === true ? "" : fechaActualizada.toLocaleDateString("es-ES", optionsDate) }</p>
           <div className='containerUbication'>
           <i className="fas fa-map-marker-alt"></i>
             <p>Helsinki</p>
