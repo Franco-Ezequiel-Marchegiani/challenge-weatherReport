@@ -1,14 +1,30 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Sidebar.css';
 import IconoEjemplo from '../../Images/Clear.png'
 function SideBar(props) {
   const [sideBar, setSideBar] = useState(true);
+  const [climaDia, setClimaDia] = useState([""]);
+
   const changeHideSidebar = () =>{
     setSideBar(false)
   }
   const showOriginalSidebar = () =>{
     setSideBar(true)
   }
+
+  useEffect( () =>{
+      console.log("UseEffect");
+      apiDatos()
+  },[]);
+  const apiDatos = async() =>{
+    //Json con los datos de Buenos Aires
+    const data = await fetch(`/api/location/468739/`);
+    const climaJson =await data.json()
+    console.log(climaJson.consolidated_weather[0]);
+    setClimaDia(climaJson.consolidated_weather)
+  };
+  console.log(climaDia[0].weather_state_abbr);
+
   /* Al hacer la bara de busqueda dividirlo por partes:
   La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
   Luego, para que se actualicen los datos, el usuario tiene que CLICKEAR cada pais para que aplicara.
@@ -16,6 +32,8 @@ function SideBar(props) {
   ellos, y una vez que se clickeen, ahí se verán modificados */
   /* Comunicación hijo a Padre */
   const {e, propPrueba} = props;  
+  const nombreImagen = "/static/img/weather/png/"
+  const extension = ".png"
   return (
     <section className='sideBarContainer'>
     {sideBar ? 
@@ -25,7 +43,7 @@ function SideBar(props) {
               <button onClick={changeHideSidebar} className='iconLocation'><i className="fas fa-search-location"></i></button>
           </div>
           <div className='iconTimeContainer'>
-          <img className='iconTime' src={IconoEjemplo} alt="" />
+          <img className='iconTime' src={nombreImagen + climaDia[0].weather_state_abbr + extension} alt="Icono Clima" />
           </div>
           <h1 className='titleTemperature'><span className='numberTemperature'>15</span><span className='c_temperature'>°c</span></h1>
           <h2 className='subTitle'>Clear</h2>
