@@ -72,6 +72,10 @@
 .titleTemperature{
     padding-top: 80px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .numberTemperature{
     font-family: Raleway;
@@ -80,6 +84,9 @@
     font-size: 144px;
     line-height: 169px;
     color: #E7E7EB;
+}
+.numberTemperatureLoading{
+    font-size: 80px;
 }
 .c_temperature{
     font-size: 80px;

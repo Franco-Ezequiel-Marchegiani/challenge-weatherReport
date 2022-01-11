@@ -48,7 +48,7 @@ function SideBar(props) {
           { cargando === true && <Spinner animation="grow" className='spinnerCarga' /> }
           <img className='iconTime' src={nombreImagen + climaDia[0].weather_state_abbr + extension} alt="Icono Clima" />
           </div>
-          <h1 className='titleTemperature'><span className='numberTemperature'>{climaDia[0].the_temp}</span><span className='c_temperature'>°c</span></h1>
+          <h1 className='titleTemperature'><span className='numberTemperature'>{cargando === true ? <p className='numberTemperatureLoading'>...</p> : climaDia[0].the_temp.toFixed(0) }</span><span className='c_temperature'>°c</span></h1>
           <h2 className='subTitle'>{climaDia[0].weather_state_name}</h2>
           <p className='textDateToday'>Today <span className='pointSideBar'>•</span> Fri, 5 Jun</p>
           <div className='containerUbication'>

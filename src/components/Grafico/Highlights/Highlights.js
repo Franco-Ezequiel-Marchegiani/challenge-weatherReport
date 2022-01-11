@@ -3,7 +3,6 @@ import './Highlights.css';
 import { ProgressBar } from 'react-bootstrap';
 
 function Highlights() {
-
   const [climaSemanal, setClimaSemanal] = useState([""]);
   const [cargando, setCargando] = useState(true);
 
@@ -15,7 +14,6 @@ function Highlights() {
     //Json con los datos de Buenos Aires
     const data = await fetch(`/api/location/468739/`);
     const climaJson =await data.json()
-    console.log(climaJson.consolidated_weather[0]);
     setClimaSemanal(climaJson.consolidated_weather)
     setCargando(false)
   };
