@@ -6,6 +6,7 @@ function SideBar(props) {
   const [climaDia, setClimaDia] = useState([""]);
   const [cargando, setCargando] = useState(true);
 
+  /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
     setSideBar(false)
   }
@@ -13,6 +14,7 @@ function SideBar(props) {
     setSideBar(true)
   }
 
+  /* Llamado API */
   useEffect( () =>{
       console.log("UseEffect");
       apiDatos()
@@ -33,9 +35,16 @@ function SideBar(props) {
   Ej, está el listado de Buenos Aires, Monte video & Lima, la barra de búsqueda sirve para buscar entre
   ellos, y una vez que se clickeen, ahí se verán modificados */
   /* Comunicación hijo a Padre */
-  const {e, propPrueba} = props;  
+  const {e, propPrueba} = props; 
+
+  /* Configuracion IconoImagen */ 
   const nombreImagen = "/static/img/weather/png/"
   const extension = ".png"
+
+  /* Configuracion Fecha */
+  const fechaActualizada = new Date(climaDia[0].applicable_date);
+  console.log(fechaActualizada);
+  const optionsDate = {weekday: 'long', month: 'long', day: 'numeric'}
   return (
     <section className='sideBarContainer'>
     {sideBar ? 
@@ -50,7 +59,7 @@ function SideBar(props) {
           </div>
           <h1 className='titleTemperature'><span className='numberTemperature'>{cargando === true ? <p className='numberTemperatureLoading'>...</p> : climaDia[0].the_temp.toFixed(0) }</span><span className='c_temperature'>°c</span></h1>
           <h2 className='subTitle'>{climaDia[0].weather_state_name}</h2>
-          <p className='textDateToday'>Today <span className='pointSideBar'>•</span> Fri, 5 Jun</p>
+          <p className='textDateToday'>Today <span className='pointSideBar'>•</span> {fechaActualizada.toLocaleDateString("es-ES", optionsDate)}</p>
           <div className='containerUbication'>
           <i className="fas fa-map-marker-alt"></i>
             <p>Helsinki</p>

@@ -17,7 +17,6 @@ function Grafico() {
     setClimaSemanal(climaJson.consolidated_weather)
   }
 
-  let optionsDateConfig = {day:"numeric", month: "long", weekday:"long"}
   return (
     <section className='graficoContainerAll'>
       <main className='graficoContainerContent'>
