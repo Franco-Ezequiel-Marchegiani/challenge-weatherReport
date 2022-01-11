@@ -18,13 +18,14 @@ function Highlights() {
     setClimaSemanal(climaJson.consolidated_weather)
   }
   console.log(climaSemanal);
-
+  console.log(climaSemanal[0]);
   const now = 84;
 
   const progressInstance = <ProgressBar now={now} className='progressBar' />;
 
   return (
     <section className='hightLigtsContainer'>
+    { climaSemanal.length === 0 && <p>cargando...</p> }
       <div className='hightLightItem windStatus'>
         <p>Estado del viento</p>
         <h1>7 <span>mph</span></h1>

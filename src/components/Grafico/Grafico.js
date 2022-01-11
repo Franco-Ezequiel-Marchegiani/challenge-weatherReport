@@ -9,17 +9,14 @@ function Grafico() {
   const [climaSemanal, setClimaSemanal] = useState([]);
 
   useEffect( () =>{
-      console.log("UseEffect");
       apiDatos()
   },[])
   const apiDatos = async() =>{
     //Json con los datos de Buenos Aires
     const data = await fetch(`/api/location/468739/`);
     const climaJson =await data.json()
-    console.log(climaJson.consolidated_weather);
     setClimaSemanal(climaJson.consolidated_weather)
   }
-  console.log(climaSemanal);
 
   let optionsDateConfig = {day:"numeric", month: "long", weekday:"long"}
   return (
