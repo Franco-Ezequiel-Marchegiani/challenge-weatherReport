@@ -52,7 +52,7 @@ function Highlights() {
           </div>
           <div className='hightLightItem visibility'>
             <p>Visibilidad</p>
-            <h1>{climaSemanal[0].visibility} <span>Millas</span></h1>
+            <h1>{climaSemanal[0].visibility.toFixed(1)} <span>Millas</span></h1>
           </div>
           <div className='hightLightItem airPressure'>
             <p>Presión del aire</p>
