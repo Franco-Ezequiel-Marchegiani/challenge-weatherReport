@@ -20,6 +20,8 @@ function Grafico() {
     setClimaSemanal(climaJson.consolidated_weather)
   }
   console.log(climaSemanal);
+
+  let optionsDateConfig = {day:"numeric", month: "long", weekday:"long"}
   return (
     <section className='graficoContainerAll'>
       <main className='graficoContainerContent'>
@@ -33,12 +35,14 @@ function Grafico() {
         })}  */}
         { climaSemanal.length === 0 && <p>cargando...</p> }
           {climaSemanal.map( (climaDia, i) =>{
-            return <Day key={climaDia.id} day={climaDia.applicable_date} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp} minTemp={climaDia.min_temp}/> 
+            const fechaActualizada = new Date(climaDia.applicable_date);
+            const optionsDate = {weekday: 'long', month: 'long', day: 'numeric'}
+            return <Day key={climaDia.id} day={fechaActualizada.toLocaleDateString("es-ES", optionsDate)} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp.toFixed(1)} minTemp={climaDia.min_temp.toFixed(1)}/> 
           })}
           
         </div>
         <section>
-          <h1 className='titleHighlights'>Today's Highlights</h1>
+          <h1 className='titleHighlights'>Novedades del día</h1>
           <div>
             <Highlights/>
           </div>

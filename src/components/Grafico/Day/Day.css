@@ -33,14 +33,15 @@
     color: #E7E7EB;
 }
 .maxTemperature{
-    padding-right: 8px;
+    padding: 0px 8px;
 }
 .minTemperature{
     color: #A09FB1;
-    padding-left: 8px;
+    padding: 0px 8px;
 }
 @media only screen and (min-width: 1200px){
     .dayContainer{
+        max-width: 30%;
         margin: 0 13px;
     }
     .dayContainer:first-child{
