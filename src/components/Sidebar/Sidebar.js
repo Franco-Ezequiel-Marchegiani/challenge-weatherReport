@@ -35,21 +35,27 @@ function SideBar(props) {
   const apiDatosGenerales = async() =>{
     //Json con los datos de Buenos Aires
     const data = await fetch(`/api/location/468739/`);
-    const climaJson =await data.json()
-    setInfoClimaGeneral(climaJson)
+    const climaGeneralJson =await data.json()
+    setInfoClimaGeneral(climaGeneralJson)
     setCargando(false)
   };
-  const prueba = "a"
+  const prueba = "buenos"
   console.log(infoClimaGeneral.title);
   const apiBuscador = async() =>{
     //Json con los datos de Buenos Aires
     const data = await fetch(`/api/location/search/?query=${prueba}`);
-    const climaJson =await data.json()
-    setListadoZonas(climaJson)
+    const buscadorJson =await data.json()
+    setListadoZonas(buscadorJson)
+    console.log(buscadorJson);
   };
   useEffect( () =>{
     apiBuscador()
   },[]);
+
+  //Función busqueda
+  const barraBusqueda = (e) =>{
+    console.log("Prueba tipeo" + e.target.value);
+  }
 
   /* Al hacer la bara de busqueda dividirlo por partes:
   La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
@@ -92,7 +98,7 @@ function SideBar(props) {
       </div>
       <div className='buscadorContainer'>
       <i className="fas fa-search"></i>
-      <input onChange={() => propPrueba(e)} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
+      <input onChange={barraBusqueda} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
       <button className='btn-search'>Buscar</button>
       </div>
       <div className='BusquedasContainer'>
