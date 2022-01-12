@@ -9,6 +9,7 @@ function SideBar(props) {
   const [infoClimaGeneral, setInfoClimaGeneral] = useState([]);
 
   const [listadoZonas, setListadoZonas] = useState([]);
+  const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
   /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
     setSideBar(false)
@@ -53,9 +54,10 @@ function SideBar(props) {
   },[]);
 
   //Función busqueda
-  const barraBusqueda = (e) =>{
-    console.log("Prueba tipeo" + e.target.value);
+  const tipeoUsuario = (e) =>{
+    setFiltradoBusqueda(e.target.value)
   }
+  console.log(filtradoBusqueda);
 
   /* Al hacer la bara de busqueda dividirlo por partes:
   La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
@@ -98,7 +100,7 @@ function SideBar(props) {
       </div>
       <div className='buscadorContainer'>
       <i className="fas fa-search"></i>
-      <input onChange={barraBusqueda} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
+      <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
       <button className='btn-search'>Buscar</button>
       </div>
       <div className='BusquedasContainer'>
