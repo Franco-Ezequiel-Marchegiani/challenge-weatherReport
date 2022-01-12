@@ -57,7 +57,7 @@ function SideBar(props) {
   const tipeoUsuario = (e) =>{
     setFiltradoBusqueda(e.target.value)
   }
-
+  console.log(listadoZonas[0].title);
   /* Al hacer la bara de busqueda dividirlo por partes:
   La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
   Luego, para que se actualicen los datos, el usuario tiene que CLICKEAR cada pais para que aplicara.
@@ -110,9 +110,10 @@ function SideBar(props) {
       }
       {filtradoBusqueda !== "" && 
       <div className='BusquedasContainer'>
-        <p>Todo viene bien  <span className='arrowTitle'>{'>'}</span></p>
-        <p>Santiago <span className='arrowTitle'>{'>'}</span></p>
-        <p>Lima <span className='arrowTitle'>{'>'}</span></p>
+        {listadoZonas.map((item, indice) =>{
+          return <p>{item.title}  <span className='arrowTitle'>{'>'}</span></p>
+        })}
+        
       </div>
       }
         
