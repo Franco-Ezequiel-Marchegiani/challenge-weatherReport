@@ -7,6 +7,8 @@ import Footer from './Footer/Footer';
 function Grafico() {
   const [climaSemanal, setClimaSemanal] = useState([]);
 
+  /* Para recibir el número del sidebar, se pasa mediante props
+  El cual se almacena en una variable y esa variable va a la URL de la API */
   useEffect( () =>{
       apiDatos()
   },[])

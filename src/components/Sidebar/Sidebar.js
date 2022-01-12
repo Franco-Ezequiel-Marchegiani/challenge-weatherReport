@@ -54,10 +54,9 @@ function SideBar(props) {
   const tipeoUsuario = (e) =>{
     setFiltradoBusqueda(e.target.value)
   }
-  console.log(listadoZonas[0].title);
 
   const ubicacionClickeada = (e) =>{
-    console.log("Prueba clickeo");
+    console.log(e.target.id);
   }
 
   /* Configuracion IconoImagen */ 
@@ -106,7 +105,7 @@ function SideBar(props) {
         {filtradoBusqueda !== "" && 
           <div className='BusquedasContainer'>
             {listadoZonas.map(item =>{
-              return <p key={item.woeid} onClick={ubicacionClickeada}>{item.title}  <span className='arrowTitle'>{'>'}</span></p>
+              return <p key={item.woeid} id={item.woeid} onClick={ubicacionClickeada}>{item.title} <span className='arrowTitle'>{'>'}</span></p>
             })}
           </div>
         }
