@@ -7,6 +7,8 @@ function SideBar(props) {
   const [cargando, setCargando] = useState(true);
 
   const [infoClimaGeneral, setInfoClimaGeneral] = useState([]);
+
+  const [listadoZonas, setListadoZonas] = useState([]);
   /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
     setSideBar(false)
@@ -37,6 +39,17 @@ function SideBar(props) {
     setInfoClimaGeneral(climaJson)
     setCargando(false)
   };
+  const prueba = "a"
+  console.log(infoClimaGeneral.title);
+  const apiBuscador = async() =>{
+    //Json con los datos de Buenos Aires
+    const data = await fetch(`/api/location/search/?query=${prueba}`);
+    const climaJson =await data.json()
+    setListadoZonas(climaJson)
+  };
+  useEffect( () =>{
+    apiBuscador()
+  },[]);
 
   /* Al hacer la bara de busqueda dividirlo por partes:
   La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
