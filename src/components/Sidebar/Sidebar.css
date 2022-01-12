@@ -185,6 +185,18 @@
     overflow-y: scroll;
     height: 100vh;
 }
+.BusquedasContainer::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .BusquedasContainer::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  .BusquedasContainer::-webkit-scrollbar-thumb {
+    background-color: #11171a;
+    border-radius: 10px;
+  }
 .BusquedasContainer p{
     display: flex;
     flex-direction: row;
@@ -260,9 +272,5 @@
 @media only screen and (min-width: 1300px){
     .sideBarContainer{
         width: 30%;
-    }
-    .BusquedasContainer{
-    overflow-y: scroll;
-    height: 100vh;
     }
 }
