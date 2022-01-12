@@ -4,8 +4,10 @@ import './Grafico.css';
 import Highlights from './Highlights/Highlights';
 import Footer from './Footer/Footer';
 
-function Grafico() {
+function Grafico(props) {
   const [climaSemanal, setClimaSemanal] = useState([]);
+  const [funcionPrueba, setFuncionPrueba] =useState();
+  const {idLocation, pruebaFunction} = props;
 
   /* Para recibir el número del sidebar, se pasa mediante props
   El cual se almacena en una variable y esa variable va a la URL de la API */

@@ -10,6 +10,9 @@ function SideBar(props) {
 
   const [listadoZonas, setListadoZonas] = useState([""]);
   const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
+
+  //Componente del padre para obtener información del hijo
+  const {idLocation, ubicacionSeleccionada} = props;
   /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
     setSideBar(false)
@@ -54,9 +57,9 @@ function SideBar(props) {
   const tipeoUsuario = (e) =>{
     setFiltradoBusqueda(e.target.value)
   }
-
+  
   const ubicacionClickeada = (e) =>{
-    console.log(e.target.id);
+    ubicacionSeleccionada(e.target.id)
   }
 
   /* Configuracion IconoImagen */ 
