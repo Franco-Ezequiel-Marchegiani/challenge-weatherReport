@@ -66,6 +66,25 @@ function SideBar(props) {
   /* Configuracion Fecha */
   const fechaActualizada = new Date(climaDia[0].applicable_date);
   const optionsDate = {weekday: 'long', month: 'long', day: 'numeric'}
+  /* Array objetos muestra simple */
+  const arrayObjetosUbicaciones = [
+    {title: "Buenos Aires",
+    woeid: 468739
+    },
+    {
+      title: "Santiago",
+      woeid: 349859
+    },
+    {
+      title: "Lima",
+      woeid: 418440
+    },
+    {
+      title: "São Paulo",
+      woeid: 455827
+    }
+  ]
+  
   return (
     <section className='sideBarContainer'>
     {sideBar ? 
