@@ -182,6 +182,8 @@
 }
 .BusquedasContainer{
     color: #E7E7EB;
+    overflow-y: scroll;
+    height: 100vh;
 }
 .BusquedasContainer p{
     display: flex;
@@ -258,5 +260,9 @@
 @media only screen and (min-width: 1300px){
     .sideBarContainer{
         width: 30%;
+    }
+    .BusquedasContainer{
+    overflow-y: scroll;
+    height: 100vh;
     }
 }

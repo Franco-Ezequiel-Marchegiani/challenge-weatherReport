@@ -41,15 +41,12 @@ function SideBar(props) {
     setCargando(false)
   };
   const apiBuscador = async() =>{
-    //Json con los datos de Buenos Aires
+    //Json con datos de barra de busqueda
     const data = await fetch(`/api/location/search/?query=${filtradoBusqueda}`);
     const buscadorJson =await data.json()
     setListadoZonas(buscadorJson);
-    console.log("Cambió el URL");
-    console.log(buscadorJson);
   };
   useEffect( () =>{
-    
     apiBuscador()
   },[filtradoBusqueda]);
 
@@ -58,12 +55,10 @@ function SideBar(props) {
     setFiltradoBusqueda(e.target.value)
   }
   console.log(listadoZonas[0].title);
-  /* Al hacer la bara de busqueda dividirlo por partes:
-  La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
-  Luego, para que se actualicen los datos, el usuario tiene que CLICKEAR cada pais para que aplicara.
-  Ej, está el listado de Buenos Aires, Monte video & Lima, la barra de búsqueda sirve para buscar entre
-  ellos, y una vez que se clickeen, ahí se verán modificados */
-  /* Comunicación hijo a Padre */
+
+  const ubicacionClickeada = (e) =>{
+    console.log("Prueba clickeo");
+  }
 
   /* Configuracion IconoImagen */ 
   const nombreImagen = "/static/img/weather/png/"
@@ -110,8 +105,8 @@ function SideBar(props) {
       }
       {filtradoBusqueda !== "" && 
       <div className='BusquedasContainer'>
-        {listadoZonas.map((item, indice) =>{
-          return <p key={item.woeid}>{item.title}  <span className='arrowTitle'>{'>'}</span></p>
+        {listadoZonas.map(item =>{
+          return <p key={item.woeid} onClick={ubicacionClickeada}>{item.title}  <span className='arrowTitle'>{'>'}</span></p>
         })}
         
       </div>
