@@ -8,7 +8,7 @@ function SideBar(props) {
 
   const [infoClimaGeneral, setInfoClimaGeneral] = useState([]);
 
-  const [listadoZonas, setListadoZonas] = useState([]);
+  const [listadoZonas, setListadoZonas] = useState([""]);
   const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
   /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
@@ -111,7 +111,7 @@ function SideBar(props) {
       {filtradoBusqueda !== "" && 
       <div className='BusquedasContainer'>
         {listadoZonas.map((item, indice) =>{
-          return <p>{item.title}  <span className='arrowTitle'>{'>'}</span></p>
+          return <p key={item.woeid}>{item.title}  <span className='arrowTitle'>{'>'}</span></p>
         })}
         
       </div>
