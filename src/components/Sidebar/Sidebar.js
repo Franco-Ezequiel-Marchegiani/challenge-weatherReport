@@ -40,24 +40,23 @@ function SideBar(props) {
     setInfoClimaGeneral(climaGeneralJson)
     setCargando(false)
   };
-  const prueba = "buenos"
-  console.log(infoClimaGeneral.title);
   const apiBuscador = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/search/?query=${prueba}`);
+    const data = await fetch(`/api/location/search/?query=${filtradoBusqueda}`);
     const buscadorJson =await data.json()
-    setListadoZonas(buscadorJson)
+    setListadoZonas(buscadorJson);
+    console.log("Cambió el URL");
     console.log(buscadorJson);
   };
   useEffect( () =>{
+    
     apiBuscador()
-  },[]);
+  },[filtradoBusqueda]);
 
   //Función busqueda
   const tipeoUsuario = (e) =>{
     setFiltradoBusqueda(e.target.value)
   }
-  console.log(filtradoBusqueda);
 
   /* Al hacer la bara de busqueda dividirlo por partes:
   La barra de búsqueda, hacer que funcione para mostrar los paises en el SIDEBAR.
@@ -65,7 +64,6 @@ function SideBar(props) {
   Ej, está el listado de Buenos Aires, Monte video & Lima, la barra de búsqueda sirve para buscar entre
   ellos, y una vez que se clickeen, ahí se verán modificados */
   /* Comunicación hijo a Padre */
-  const {e, propPrueba} = props; 
 
   /* Configuracion IconoImagen */ 
   const nombreImagen = "/static/img/weather/png/"
