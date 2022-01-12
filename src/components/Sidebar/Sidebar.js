@@ -88,31 +88,30 @@ function SideBar(props) {
           </div> 
       </section> : 
       <section className='sideBarSearch'>
-      <div className='closeSidebarContainer'>
-      <i className="fas fa-times" onClick={showOriginalSidebar}></i>
-      </div>
-      <div className='buscadorContainer'>
-      <i className="fas fa-search"></i>
-      <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
-      <button className='btn-search'>Buscar</button>
-      </div> 
-      {filtradoBusqueda === "" && 
-      <div className='BusquedasContainer'>
-        <p>Buenos Aires  <span className='arrowTitle'>{'>'}</span></p>
-        <p>Santiago <span className='arrowTitle'>{'>'}</span></p>
-        <p>Lima <span className='arrowTitle'>{'>'}</span></p>
-      </div>
+        <div className='closeSidebarContainer'>
+          <i className="fas fa-times" onClick={showOriginalSidebar}></i>
+        </div>
+        <div className='buscadorContainer'>
+          <i className="fas fa-search"></i>
+          <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
+          <button className='btn-search'>Buscar</button>
+        </div> 
+        {filtradoBusqueda === "" && 
+          <div className='BusquedasContainer'>
+            <p>Buenos Aires  <span className='arrowTitle'>{'>'}</span></p>
+            <p>Santiago <span className='arrowTitle'>{'>'}</span></p>
+            <p>Lima <span className='arrowTitle'>{'>'}</span></p>
+          </div>
+        }
+        {filtradoBusqueda !== "" && 
+          <div className='BusquedasContainer'>
+            {listadoZonas.map(item =>{
+              return <p key={item.woeid} onClick={ubicacionClickeada}>{item.title}  <span className='arrowTitle'>{'>'}</span></p>
+            })}
+          </div>
+        }
+      </section>
       }
-      {filtradoBusqueda !== "" && 
-      <div className='BusquedasContainer'>
-        {listadoZonas.map(item =>{
-          return <p key={item.woeid} onClick={ubicacionClickeada}>{item.title}  <span className='arrowTitle'>{'>'}</span></p>
-        })}
-        
-      </div>
-      }
-        
-      </section>}
   
     </section>
   );
