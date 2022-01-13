@@ -24,10 +24,10 @@ function useSideBar() {
   /* Llamado API */
   useEffect( () =>{
       apiDatos()
-  },[]);
+  },[idSeleccionadoPorUsuario]);
   const apiDatos = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/468739/`);
+    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`);
     const climaJson =await data.json()
     setClimaDia(climaJson.consolidated_weather)
     setCargando(false)
@@ -35,10 +35,10 @@ function useSideBar() {
   /* Llamada API para el título */
   useEffect( () =>{
       apiDatosGenerales()
-  },[]);
+  },[idSeleccionadoPorUsuario]);
   const apiDatosGenerales = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/468739/`);
+    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`);
     const climaGeneralJson =await data.json()
     setInfoClimaGeneral(climaGeneralJson)
     setCargando(false)
