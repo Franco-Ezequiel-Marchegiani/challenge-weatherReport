@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Sidebar.css';
 import { Spinner } from 'react-bootstrap';
-function SideBar() {
+function useSideBar() {
   const [sideBar, setSideBar] = useState(true);
   const [climaDia, setClimaDia] = useState([""]);
   const [cargando, setCargando] = useState(true);
@@ -89,7 +89,9 @@ function SideBar() {
       woeid: 455827
     }
   ]
-  return (
+  return {
+    idSeleccionadoPorUsuario,
+    render:(
     <section className='sideBarContainer'>
     {sideBar ? 
     <section className='sideBarDefault'>
@@ -136,7 +138,7 @@ function SideBar() {
       }
   
     </section>
-  );
+  )}
 }
 
-export default SideBar;
+export default useSideBar;
