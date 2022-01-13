@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Grafico from './components/Grafico/Grafico';
-import SideBar from './components/Sidebar/Sidebar';
+import useSideBar from './components/Sidebar/Sidebar';
 
 function App() {
-  
+  const {render, idSeleccionadoPorUsuario} = useSideBar();
   return (
     <section className='containerSidebar_Grafico'>
-      <SideBar/>
+      {render}
       <Grafico/>
     </section>
   );
