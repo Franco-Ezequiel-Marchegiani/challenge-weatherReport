@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Sidebar.css';
 import { Spinner } from 'react-bootstrap';
-function SideBar(props) {
+function SideBar() {
   const [sideBar, setSideBar] = useState(true);
   const [climaDia, setClimaDia] = useState([""]);
   const [cargando, setCargando] = useState(true);
@@ -10,7 +10,9 @@ function SideBar(props) {
 
   const [listadoZonas, setListadoZonas] = useState([""]);
   const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
-  
+
+  const [idSeleccionadoPorUsuario, setIdSeleccionadoPorUsuario] = useState();
+  console.log(idSeleccionadoPorUsuario);
   //Componente del padre para obtener información del hijo
   /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
@@ -56,12 +58,11 @@ function SideBar(props) {
   const tipeoUsuario = (e) =>{
     setFiltradoBusqueda(e.target.value)
   }
-  
-  const ubicacionClickeada = (e) =>{
+   /* const idClickeadaPorUsuario = (e) =>{
     
     let idTarget = e.target.id
     console.log(idTarget);
-  }
+  }  */
 
   /* Configuracion IconoImagen */ 
   const nombreImagen = "/static/img/weather/png/"
@@ -120,14 +121,14 @@ function SideBar(props) {
         {filtradoBusqueda === "" && 
           <div className='BusquedasContainer'>
           {arrayObjetosUbicaciones.map(item =>{
-            return <p key={item.woeid} id={item.woeid} onClick={ubicacionClickeada}>{item.title}<span className='arrowTitle'>{'>'}</span></p>
+            return <p key={item.woeid} id={item.woeid} onClick={(e) => setIdSeleccionadoPorUsuario(e.target.id)}>{item.title}<span className='arrowTitle'>{'>'}</span></p>
           })}
           </div>
         }
         {filtradoBusqueda !== "" && 
           <div className='BusquedasContainer'>
             {listadoZonas.map(item =>{
-              return <p key={item.woeid} id={item.woeid} onClick={ubicacionClickeada}>{item.title} <span className='arrowTitle'>{'>'}</span></p>
+              return <p key={item.woeid} id={item.woeid} onClick={(e) => setIdSeleccionadoPorUsuario(e.target.id)}>{item.title} <span className='arrowTitle'>{'>'}</span></p>
             })}
           </div>
         }
