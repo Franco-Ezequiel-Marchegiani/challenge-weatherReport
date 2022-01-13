@@ -1,19 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Grafico from './components/Grafico/Grafico';
 import SideBar from './components/Sidebar/Sidebar';
 
 function App() {
-  const prueba = 0
-   function ubicacionSeleccionada(idLocation){
+  let variableVacia = ""
+  function ubicacionSeleccionada(idLocation){
     console.log(idLocation);
-    return idLocation
   }
-  console.log(ubicacionSeleccionada());
+  
+  console.log(variableVacia);
   return (
     <section className='containerSidebar_Grafico'>
-      <SideBar ubicacionSeleccionada={(idLocation) => ubicacionSeleccionada(idLocation)}/>
-      <Grafico pruebaFunction={(idLocation) => ubicacionSeleccionada(idLocation)}/>
+      <SideBar pasajeVariableVacia={variableVacia} ubicacionSeleccionada={(idLocation) => ubicacionSeleccionada(idLocation)}/>
+      <Grafico pasajeVariableConId={variableVacia}/>
     </section>
   );
 }

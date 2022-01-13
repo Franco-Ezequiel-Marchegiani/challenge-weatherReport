@@ -7,8 +7,14 @@ import Footer from './Footer/Footer';
 function Grafico(props) {
   const [climaSemanal, setClimaSemanal] = useState([]);
   const [funcionPrueba, setFuncionPrueba] =useState();
-  const {idLocation, pruebaFunction} = props;
-
+  const [refresh, setRefresh] =useState(0);
+  useEffect(() => {
+    const {pasajeVariableConId} = props;
+    console.log(pasajeVariableConId);
+  }, [refresh]);
+  const refreshData = () =>{
+    setRefresh(refresh + 1)
+  }
   /* Para recibir el número del sidebar, se pasa mediante props
   El cual se almacena en una variable y esa variable va a la URL de la API */
   useEffect( () =>{
@@ -25,6 +31,9 @@ function Grafico(props) {
     <section className='graficoContainerAll'>
       <main className='graficoContainerContent'>
         <div className='containerCyF'>
+          <div>
+            <button onClick={refreshData}>Refrescar</button>
+          </div>
           <p className='containerCGrafico'>°C</p>
           <p className='containerFGrafico'>°F</p>
         </div>
