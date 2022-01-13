@@ -20,7 +20,6 @@ function useSideBar() {
   const showOriginalSidebar = () =>{
     setSideBar(true)
   }
-
   /* Llamado API */
   useEffect( () =>{
       apiDatos()
@@ -57,12 +56,6 @@ function useSideBar() {
   const tipeoUsuario = (e) =>{
     setFiltradoBusqueda(e.target.value)
   }
-   /* const idClickeadaPorUsuario = (e) =>{
-    
-    let idTarget = e.target.id
-    console.log(idTarget);
-  }  */
-
   /* Configuracion IconoImagen */ 
   const nombreImagen = "/static/img/weather/png/"
   const extension = ".png"
@@ -139,5 +132,4 @@ function useSideBar() {
     </section>
   )}
 }
-
 export default useSideBar;
