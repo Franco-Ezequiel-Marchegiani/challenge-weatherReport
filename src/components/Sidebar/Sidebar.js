@@ -12,7 +12,6 @@ function SideBar(props) {
   const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
   
   //Componente del padre para obtener información del hijo
-  let {idLocation, ubicacionSeleccionada, pasajeVariableVacia} = props;
   /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
     setSideBar(false)
@@ -61,10 +60,7 @@ function SideBar(props) {
   const ubicacionClickeada = (e) =>{
     
     let idTarget = e.target.id
-    ubicacionSeleccionada(idTarget)
-    let sumaId = pasajeVariableVacia + idTarget 
-    console.log(sumaId);
-    return sumaId
+    console.log(idTarget);
   }
 
   /* Configuracion IconoImagen */ 
