@@ -6,7 +6,7 @@ import Footer from './Footer/Footer';
 
 function Grafico({idSeleccionadoPorUsuario}) {
   const [climaSemanal, setClimaSemanal] = useState([]);
-  
+  console.log(idSeleccionadoPorUsuario);
   useEffect( () =>{
       apiDatos()
   },[])
