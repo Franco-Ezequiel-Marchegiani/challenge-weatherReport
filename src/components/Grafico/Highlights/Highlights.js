@@ -8,10 +8,10 @@ function Highlights({idSeleccionadoPorUsuario}) {
   console.log(idSeleccionadoPorUsuario);
   useEffect( () =>{
       apiDatos()
-  },[]);
+  },[idSeleccionadoPorUsuario]);
   const apiDatos = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/468739/`);
+    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`);
     const climaJson =await data.json()
     setClimaSemanal(climaJson.consolidated_weather)
     setCargando(false)
