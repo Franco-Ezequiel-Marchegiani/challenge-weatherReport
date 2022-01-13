@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import Grafico from './components/Grafico/Grafico';
 import useSideBar from './components/Sidebar/Sidebar';
@@ -8,7 +8,7 @@ function App() {
   return (
     <section className='containerSidebar_Grafico'>
       {render}
-      <Grafico/>
+      <Grafico idSeleccionadoPorUsuario={idSeleccionadoPorUsuario}/>
     </section>
   );
 }
