@@ -55,14 +55,11 @@
     line-height: 28px;
     color: #E7E7EB;    
 }
-
-
 @media only screen and (min-width: 418px){
     .daysContainer{
         justify-content: flex-start;
     }
 }
-
 @media only screen and (min-width: 1200px){
     .graficoContainerAll{
         width: 75%;
