@@ -5,7 +5,6 @@ import { ProgressBar } from 'react-bootstrap';
 function Highlights({idSeleccionadoPorUsuario}) {
   const [climaSemanal, setClimaSemanal] = useState([""]);
   const [cargando, setCargando] = useState(true);
-  console.log(idSeleccionadoPorUsuario);
   useEffect( () =>{
       apiDatos()
   },[idSeleccionadoPorUsuario]);
