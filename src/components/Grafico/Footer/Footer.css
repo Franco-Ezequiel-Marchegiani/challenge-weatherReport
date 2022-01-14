@@ -16,7 +16,6 @@ footer p{
 .linkProfileFooter:hover{
     color: #746adb;
 }
-
 @media only screen and (min-width: 1200px){
     footer p{
         padding-top: 180px;
