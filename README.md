@@ -24,9 +24,9 @@
 
 - [Vista_previa](#Vista_previa)
 - [Construido Utilizando](#Construido_utilizando)
-- [Features](#features)
-- [How to use](#how-to-use)
-- [Contact](#contact)
+- [Características](#caracteristicas)
+- [Cómo Utilizar la página](#como_usar_pagina)
+- [Contacto](#Contacto)
 
 <!-- OVERVIEW -->
 ## Vista_previa 
@@ -43,8 +43,7 @@ Algo que considero importante que pude aprender, es el pasar información de un 
 - Mi moraleja:
 Aprendí la importancia de estar siempre metido en el código, y de practicar en todo momento lo que uno sabe, ya que algunas cosas pueden olvidarse, y al final del día lo que queda es una sensación gratificante de no solo poner en práctica lo que uno sabe, sino de poder ver el fruto del esfuerzo y hacer una página la cual antes no había hecho, realmente es algo que le recomiendo a cualquier programador que esté iniciando.
 
-### Construido Utilizando
-[](#Construido_utilizando)
+### Construido_utilizando
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
@@ -53,7 +52,7 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 - [Meta Weather API](https://www.metaweather.com/api/)
 - [Fontawesome](https://fontawesome.com/)
 
-## Características de la aplicación
+## caracteristicas
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 ### Las características o detalles a destacar de esta página son los siguientes
@@ -77,7 +76,7 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 - Contiene componentes re-utilizable, los cuales son el recuadro de los próximos 5 días, y los 4 recuadros con la información del día de hoy (los cuales muestran información sobre el estado del viento, humedad, visibilidad & presión de aire)
 - Contiene una barra de búsqueda la cual responde en tiempo real (es decir, ni bien el usuario presione las teclas), lo cual también posee un llamado a una API
 - El proyecto es 100% responsive y adaptable a cualquier dispositivo
-## Cómo correr página localmente
+## como_usar_pagina
 
 <!-- Example: -->
 
@@ -93,7 +92,7 @@ $ npm install
 # Run the app
 $ npm start
 
-## Contact
+## Contacto
 
 - Portfolio [franco-ezequiel-marchegiani](https://franco-ezequiel-marchegiani.github.io/portfolio/})
 - GitHub [@Franco-Ezequiel-Marchegiani](https://github.com/Franco-Ezequiel-Marchegiani)
