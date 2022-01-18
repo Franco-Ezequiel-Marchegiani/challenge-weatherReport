@@ -51,6 +51,7 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 - [React](https://reactjs.org/)
 - [Bootstrap (React)](https://react-bootstrap.github.io/components/alerts/)
 - [Meta Weather API](https://www.metaweather.com/api/)
+- [Fontawesome](https://fontawesome.com/)
 
 ## Features
 
