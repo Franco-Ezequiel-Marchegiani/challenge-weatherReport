@@ -35,12 +35,15 @@
 
 ![screenshot](https://i.postimg.cc/7hfg0v4C/ej.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- Dónde puedo ver la página funcionando?
+La misma la encontrarás accediendo al <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">siguiente link</a> 
+- Mi experiencia realizando el proyecto:
+Disfruté mucho el proceso de realización de la app, fue un desafío en muchos momentos, y sobre todo al final, pero fue bastante agradable el realizar una página desde 0, con un buen diseño y reforzando los conocimientos que poseo (y también aprendiendo nuevas cosas)
+- Qué aprendiste y/o mejoré al hacer el desafío:
+Algo que considero importante que pude aprender, es el pasar información de un componente hijo, a otro componente hijo (pasandolo por el padre) utilizando React.Js, es algo de lo que no tenía ni idea que se podía hacer. También mejoré mis conocimientos y experiencias en la librería React en sí, haciendo llamados a una API, añadiendo estados y condicionales a la hora de mostrar la vista al usuario :)
+- Mi moraleja:
+Aprendí la importancia de estar siempre metido en el código, y de practicar en todo momento lo que uno sabe, ya que algunas cosas pueden olvidarse, y al final del día lo que queda es una sensación gratificante de no solo poner en práctica lo que uno sabe, sino de poder ver el fruto del esfuerzo y hacer una página la cual antes no había hecho, realmente es algo que le recomiendo a cualquier programador que esté iniciando.
 
 ### Built With
 
