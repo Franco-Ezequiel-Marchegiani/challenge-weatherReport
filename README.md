@@ -30,8 +30,7 @@
 - [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
-
-## Vista_previa [Vista previa](#Vista_previa)
+## Vista_previa 
 
 ![screenshot](https://i.postimg.cc/7hfg0v4C/ej.png)
 
@@ -50,8 +49,8 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Bootstrap (React)](https://react-bootstrap.github.io/components/alerts/)
+- [Meta Weather API](https://www.metaweather.com/api/)
 
 ## Features
 
