@@ -26,7 +26,7 @@
 - [Construido Utilizando](#Construido_utilizando)
 - [Características](#caracteristicas)
 - [Cómo Utilizar la página](#como_usar_pagina)
-- [Contacto](#Contacto)
+- [Contacto](#contacto)
 
 <!-- OVERVIEW -->
 ## Vista_previa 
@@ -92,7 +92,7 @@ $ npm install
 # Run the app
 $ npm start
 
-## Contacto
+## contacto
 
 - Portfolio [franco-ezequiel-marchegiani](https://franco-ezequiel-marchegiani.github.io/portfolio/})
 - GitHub [@Franco-Ezequiel-Marchegiani](https://github.com/Franco-Ezequiel-Marchegiani)
