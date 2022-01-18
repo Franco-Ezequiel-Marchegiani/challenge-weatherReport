@@ -22,7 +22,7 @@
 
 ## Table of Contents
 
-- [Vista previa](#overview)
+- [Vista_previa](#Vista_previa)
   - [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
@@ -31,7 +31,7 @@
 
 <!-- OVERVIEW -->
 
-## Vista previa
+## Vista_previa
 
 ![screenshot](https://i.postimg.cc/7hfg0v4C/ej.png)
 
