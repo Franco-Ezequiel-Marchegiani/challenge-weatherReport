@@ -44,7 +44,7 @@ Algo que considero importante que pude aprender, es el pasar información de un 
 - Mi moraleja:
 Aprendí la importancia de estar siempre metido en el código, y de practicar en todo momento lo que uno sabe, ya que algunas cosas pueden olvidarse, y al final del día lo que queda es una sensación gratificante de no solo poner en práctica lo que uno sabe, sino de poder ver el fruto del esfuerzo y hacer una página la cual antes no había hecho, realmente es algo que le recomiendo a cualquier programador que esté iniciando.
 
-### Built With
+### Construido utilizando
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
@@ -58,12 +58,22 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 ### Las características o detalles a destacar de esta página son los siguientes:
 
+#### Características del usuario
+
 - El usuario puede acceder a la información del clima de una ciudad por default, sin tener que hacer nada más que abrir la página
 - Se pueden realizar búsquedas por ciudades, y la información se actualiza a corde la ciudad seleccionada
 - Se puede obtener la información del día de la fecha, y de los próximos 5 días
 - Se puede ver la fecha y ubicación del clima
 - Se visualizan los distintos tipos de climas acorde a íconos
+- Se puede ver la temperatura mínima y máxima del día y de los próximos 5 días
+- Se puede ver la dirección y el estado del viento
+- Se puede ver el porcentaje de humedad, y cuenta con una barra que indica el porcentaje del mismo
+- Se puede ver el número de la presión del aire
+- Posee un indicador de visibilidad
 
+#### Características técnicas
+
+-
 ## How To Use
 
 <!-- Example: -->
