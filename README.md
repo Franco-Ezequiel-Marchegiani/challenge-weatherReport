@@ -36,7 +36,6 @@
 
 
 - Dónde puedo ver la página funcionando?
-<br>
 La misma la encontrarás accediendo al <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">siguiente link</a> 
 - Mi experiencia realizando el proyecto:
 Disfruté mucho el proceso de realización de la app, fue un desafío en muchos momentos, y sobre todo al final, pero fue bastante agradable el realizar una página desde 0, con un buen diseño y reforzando los conocimientos que poseo (y también aprendiendo nuevas cosas)
@@ -54,11 +53,16 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 - [Meta Weather API](https://www.metaweather.com/api/)
 - [Fontawesome](https://fontawesome.com/)
 
-## Features
+## Características de la aplicación
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+### Las características o detalles a destacar de esta página son los siguientes:
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv) was to build an application to complete the given user stories.
+- El usuario puede acceder a la información del clima de una ciudad por default, sin tener que hacer nada más que abrir la página
+- Se pueden realizar búsquedas por ciudades, y la información se actualiza a corde la ciudad seleccionada
+- Se puede obtener la información del día de la fecha, y de los próximos 5 días
+- Se puede ver la fecha y ubicación del clima
+- Se visualizan los distintos tipos de climas acorde a íconos
 
 ## How To Use
 
