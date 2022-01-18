@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-url-to-the-solution}">
+    <a target="_blank" href="https://franco-ezequiel-marchegiani.github.io/challenge-weatherReport/">
       Solution (falta subirlo)
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
+    <a target="_blank" href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
       Challenge
     </a>
   </h3>
