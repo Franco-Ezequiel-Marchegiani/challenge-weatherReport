@@ -8,7 +8,7 @@ function useSideBar() {
   const [cargando, setCargando] = useState(true);
   const [infoClimaGeneral, setInfoClimaGeneral] = useState([]);
   const [listadoZonas, setListadoZonas] = useState([""]);
-  const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
+  const [filtradoBusqueda, setFiltradoBusqueda] = useState("468739");
   const [idSeleccionadoPorUsuario, setIdSeleccionadoPorUsuario] = useState("468739");
   //Componente del padre para obtener información del hijo
   /* Configuracion mostrar y ocultar sidebars */
@@ -89,7 +89,7 @@ function useSideBar() {
               </div>
               <div className='iconTimeContainer'>
                 { cargando === true && <Spinner animation="grow" className='spinnerCarga' /> }
-                <img className='iconTime' src={nombreImagen + climaDia[0].weather_state_abbr + extension} alt="Icono Clima" />
+                { cargando === false && <img className='iconTime' src={nombreImagen + climaDia[0].weather_state_abbr + extension} alt="Icono Clima" />}
               </div>
               <h1 className='titleTemperature'><span className='numberTemperature'>{cargando === true ? <p className='numberTemperatureLoading'>...</p> : climaDia[0].the_temp.toFixed(0) }</span><span className='c_temperature'>°c</span></h1>
               <h2 className='subTitle'>{climaDia[0].weather_state_name}</h2>
