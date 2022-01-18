@@ -56,7 +56,7 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 ## Características de la aplicación
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-### Las características o detalles a destacar de esta página son los siguientes:
+### Las características o detalles a destacar de esta página son los siguientes
 
 #### Características del usuario
 
@@ -73,7 +73,7 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 
 #### Características técnicas
 
--
+- Se utilizó el llamado a una API de terceros
 ## How To Use
 
 <!-- Example: -->
