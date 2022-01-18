@@ -35,7 +35,7 @@
 
 
 - Dónde puedo ver la página funcionando?
-La misma la encontrarás accediendo al <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">siguiente link</a> 
+La misma la encontrarás accediendo al <a href="https://franco-ezequiel-marchegiani.github.io/challenge-weatherReport/">siguiente link</a> 
 - Mi experiencia realizando el proyecto:
 Disfruté mucho el proceso de realización de la app, fue un desafío en muchos momentos, y sobre todo al final, pero fue bastante agradable el realizar una página desde 0, con un buen diseño y reforzando los conocimientos que poseo (y también aprendiendo nuevas cosas)
 - Qué aprendiste y/o mejoré al hacer el desafío:
@@ -84,7 +84,7 @@ Para clonar y correr la aplicación, necesitarás [Git](https://git-scm.com) & [
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/Franco-Ezequiel-Marchegiani/challenge-weatherReport
 
 # Install dependencies
 $ npm install
