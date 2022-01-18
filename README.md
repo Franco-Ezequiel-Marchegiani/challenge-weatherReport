@@ -9,7 +9,7 @@
 <div align="center">
   <h3>
     <a target="_blank" href="https://franco-ezequiel-marchegiani.github.io/challenge-weatherReport/">
-      Solution (falta subirlo)
+      Solution
     </a>
     <span> | </span>
     <a target="_blank" href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
