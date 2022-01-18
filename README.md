@@ -8,7 +8,6 @@
 
 <div align="center">
   <h3>
-    <span> | </span>
     <a href="https://{your-url-to-the-solution}">
       Solution (falta subirlo)
     </a>
@@ -23,7 +22,7 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Vista previa](#overview)
   - [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
@@ -32,7 +31,7 @@
 
 <!-- OVERVIEW -->
 
-## Overview
+## Vista previa
 
 ![screenshot](https://i.postimg.cc/7hfg0v4C/ej.png)
 
