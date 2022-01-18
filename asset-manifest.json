@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/challenge-weatherReport/static/css/main.f2f29449.css",
-    "main.js": "/challenge-weatherReport/static/js/main.e12818f5.js",
+    "main.js": "/challenge-weatherReport/static/js/main.99293e36.js",
     "static/js/787.e54caa72.chunk.js": "/challenge-weatherReport/static/js/787.e54caa72.chunk.js",
     "static/media/Cloud-background.png": "/challenge-weatherReport/static/media/Cloud-background.f88244c26c2492e3c5f1.png",
     "index.html": "/challenge-weatherReport/index.html",
     "main.f2f29449.css.map": "/challenge-weatherReport/static/css/main.f2f29449.css.map",
-    "main.e12818f5.js.map": "/challenge-weatherReport/static/js/main.e12818f5.js.map",
+    "main.99293e36.js.map": "/challenge-weatherReport/static/js/main.99293e36.js.map",
     "787.e54caa72.chunk.js.map": "/challenge-weatherReport/static/js/787.e54caa72.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2f29449.css",
-    "static/js/main.e12818f5.js"
+    "static/js/main.99293e36.js"
   ]
 }
