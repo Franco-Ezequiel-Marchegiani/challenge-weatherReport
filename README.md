@@ -43,7 +43,7 @@ Algo que considero importante que pude aprender, es el pasar información de un 
 - Mi moraleja:
 Aprendí la importancia de estar siempre metido en el código, y de practicar en todo momento lo que uno sabe, ya que algunas cosas pueden olvidarse, y al final del día lo que queda es una sensación gratificante de no solo poner en práctica lo que uno sabe, sino de poder ver el fruto del esfuerzo y hacer una página la cual antes no había hecho, realmente es algo que le recomiendo a cualquier programador que esté iniciando.
 
-### Construido_utilizando
+### Construido Utilizando
 [](#Construido_utilizando)
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
