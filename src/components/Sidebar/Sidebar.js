@@ -8,7 +8,7 @@ function useSideBar() {
   const [cargando, setCargando] = useState(true);
   const [infoClimaGeneral, setInfoClimaGeneral] = useState([]);
   const [listadoZonas, setListadoZonas] = useState([""]);
-  const [filtradoBusqueda, setFiltradoBusqueda] = useState("468739");
+  const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
   const [idSeleccionadoPorUsuario, setIdSeleccionadoPorUsuario] = useState("468739");
   //Componente del padre para obtener información del hijo
   /* Configuracion mostrar y ocultar sidebars */
@@ -24,7 +24,12 @@ function useSideBar() {
   },[idSeleccionadoPorUsuario]);
   const apiDatos = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`https://www.metaweather.com/api/location/${idSeleccionadoPorUsuario}/`);
+    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`,{
+      method: "GET",
+      headers: {
+        "access-control-allow-origin" : "*",
+        "Content-type": "application/json; charset=UTF-8"
+      }});
     const climaJson =await data.json()
     setClimaDia(climaJson.consolidated_weather)
     setCargando(false)
@@ -35,14 +40,24 @@ function useSideBar() {
   },[idSeleccionadoPorUsuario]);
   const apiDatosGenerales = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`https://www.metaweather.com/api/location/${idSeleccionadoPorUsuario}/`);
+    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`,{
+      method: "GET",
+      headers: {
+        "access-control-allow-origin" : "*",
+        "Content-type": "application/json; charset=UTF-8"
+      }});
     const climaGeneralJson =await data.json()
     setInfoClimaGeneral(climaGeneralJson)
     setCargando(false)
   };
   const apiBuscador = async() =>{
     //Json con datos de barra de busqueda
-    const data = await fetch(`https://www.metaweather.com/api/location/search/?query=${filtradoBusqueda}`);
+    const data = await fetch(`/api/location/search/?query=${filtradoBusqueda}`,{
+      method: "GET",
+      headers: {
+        "access-control-allow-origin" : "*",
+        "Content-type": "application/json; charset=UTF-8"
+      }});
     const buscadorJson =await data.json()
     setListadoZonas(buscadorJson);
   };

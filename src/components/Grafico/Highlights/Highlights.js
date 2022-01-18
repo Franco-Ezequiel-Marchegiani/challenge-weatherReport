@@ -10,7 +10,12 @@ function Highlights({idSeleccionadoPorUsuario}) {
   },[idSeleccionadoPorUsuario]);
   const apiDatos = async() =>{
     //Json con los datos
-    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`);
+    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`,{
+      method: "GET",
+      headers: {
+        "access-control-allow-origin" : "*",
+        "Content-type": "application/json; charset=UTF-8"
+      }});
     const climaJson =await data.json()
     setClimaSemanal(climaJson.consolidated_weather)
     setCargando(false)
