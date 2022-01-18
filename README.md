@@ -76,11 +76,11 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 - Contiene componentes re-utilizable, los cuales son el recuadro de los próximos 5 días, y los 4 recuadros con la información del día de hoy (los cuales muestran información sobre el estado del viento, humedad, visibilidad & presión de aire)
 - Contiene una barra de búsqueda la cual responde en tiempo real (es decir, ni bien el usuario presione las teclas), lo cual también posee un llamado a una API
 - El proyecto es 100% responsive y adaptable a cualquier dispositivo
-## How To Use
+## Cómo correr página localmente
 
 <!-- Example: -->
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+Para clonar y correr la aplicación, necesitarás [Git](https://git-scm.com) & [Node.js](https://nodejs.org/en/download/) (El cual viene en [npm](http://npmjs.com)) e instalarlo en tu computadora. Y luego colocar las siguientes líneas de comando:
 
 ```bash
 # Clone this repository
@@ -94,6 +94,5 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Portfolio [franco-ezequiel-marchegiani](https://franco-ezequiel-marchegiani.github.io/portfolio/})
+- GitHub [@Franco-Ezequiel-Marchegiani](https://github.com/Franco-Ezequiel-Marchegiani)
