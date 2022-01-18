@@ -36,6 +36,7 @@
 
 
 - Dónde puedo ver la página funcionando?
+<br>
 La misma la encontrarás accediendo al <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">siguiente link</a> 
 - Mi experiencia realizando el proyecto:
 Disfruté mucho el proceso de realización de la app, fue un desafío en muchos momentos, y sobre todo al final, pero fue bastante agradable el realizar una página desde 0, con un buen diseño y reforzando los conocimientos que poseo (y también aprendiendo nuevas cosas)
