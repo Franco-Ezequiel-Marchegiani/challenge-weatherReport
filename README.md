@@ -3,20 +3,17 @@
 <h1 align="center">Weather App Challenge</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+   Solución a desafío de la mano de:  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
-      Demo
-    </a>
     <span> | </span>
     <a href="https://{your-url-to-the-solution}">
-      Solution
+      Solution (falta subirlo)
     </a>
     <span> | </span>
-    <a href="https://i.postimg.cc/7hfg0v4C/ej.png">
+    <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
       Challenge
     </a>
   </h3>
