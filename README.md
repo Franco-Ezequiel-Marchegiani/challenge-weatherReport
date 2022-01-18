@@ -74,6 +74,9 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 #### Características técnicas
 
 - Se utilizó el llamado a una API de terceros
+- Contiene componentes re-utilizable, los cuales son el recuadro de los próximos 5 días, y los 4 recuadros con la información del día de hoy (los cuales muestran información sobre el estado del viento, humedad, visibilidad & presión de aire)
+- Contiene una barra de búsqueda la cual responde en tiempo real (es decir, ni bien el usuario presione las teclas), lo cual también posee un llamado a una API
+- El proyecto es 100% responsive y adaptable a cualquier dispositivo
 ## How To Use
 
 <!-- Example: -->
