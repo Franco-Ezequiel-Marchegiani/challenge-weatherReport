@@ -22,7 +22,7 @@
 
 ## Table of Contents
 
-- [Vista_previa](#Vista_previa)
+- [Vista Previa](#Vista_previa)
 - [Construido Utilizando](#Construido_utilizando)
 - [Características](#caracteristicas)
 - [Cómo Utilizar la página](#como_usar_pagina)
