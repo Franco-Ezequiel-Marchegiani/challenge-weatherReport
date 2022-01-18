@@ -24,7 +24,7 @@ function useSideBar() {
   },[idSeleccionadoPorUsuario]);
   const apiDatos = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`);
+    const data = await fetch(`https://www.metaweather.com/api/location/${idSeleccionadoPorUsuario}/`);
     const climaJson =await data.json()
     setClimaDia(climaJson.consolidated_weather)
     setCargando(false)
@@ -35,14 +35,14 @@ function useSideBar() {
   },[idSeleccionadoPorUsuario]);
   const apiDatosGenerales = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`);
+    const data = await fetch(`https://www.metaweather.com/api/location/${idSeleccionadoPorUsuario}/`);
     const climaGeneralJson =await data.json()
     setInfoClimaGeneral(climaGeneralJson)
     setCargando(false)
   };
   const apiBuscador = async() =>{
     //Json con datos de barra de busqueda
-    const data = await fetch(`/api/location/search/?query=${filtradoBusqueda}`);
+    const data = await fetch(`https://www.metaweather.com/api/location/search/?query=${filtradoBusqueda}`);
     const buscadorJson =await data.json()
     setListadoZonas(buscadorJson);
   };

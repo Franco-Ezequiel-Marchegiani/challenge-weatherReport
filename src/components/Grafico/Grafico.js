@@ -10,7 +10,7 @@ function Grafico({idSeleccionadoPorUsuario}) {
   },[idSeleccionadoPorUsuario])
   const apiDatos = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`);
+    const data = await fetch(`https://www.metaweather.com/api/location/${idSeleccionadoPorUsuario}/`);
     const climaJson =await data.json()
     setClimaSemanal(climaJson.consolidated_weather)
   }
