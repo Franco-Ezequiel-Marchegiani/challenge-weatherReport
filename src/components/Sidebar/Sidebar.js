@@ -137,10 +137,12 @@ function useSideBar() {
                 <div className='buscadorContainer'>
                     <i className="fas fa-search"></i>
                     {idiomaPagina === "spanish" ? <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
-                  : 
-                  <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Search Ubication'/>
-                  }
-                    <button className='btn-search'>Buscar</button>
+                    : 
+                    <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Search Ubication'/>}
+                    {idiomaPagina === "spanish" ? <button className='btn-search'>Buscar</button>
+                    : 
+                    <button className='btn-search'>Search</button>}
+                    
                 </div> 
                 {filtradoBusqueda === "" && 
                     <div className='BusquedasContainer'>
