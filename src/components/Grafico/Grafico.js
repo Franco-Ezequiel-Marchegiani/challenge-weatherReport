@@ -31,7 +31,12 @@ function Grafico({idSeleccionadoPorUsuario, idiomaPagina}) {
                 {climaSemanal.map( (climaDia, i) =>{
                   const fechaActualizada = new Date(climaDia.applicable_date);
                   const optionsDate = {weekday: 'long', month: 'long', day: 'numeric'}
-                  return <Day key={climaDia.id} day={fechaActualizada.toLocaleDateString("es-ES", optionsDate)} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp.toFixed(1)} minTemp={climaDia.min_temp.toFixed(1)}/> 
+                  return(
+                    idiomaPagina === "spanish" ? 
+                    <Day key={climaDia.id} day={fechaActualizada.toLocaleDateString("es-ES", optionsDate)} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp.toFixed(1)} minTemp={climaDia.min_temp.toFixed(1)}/> 
+                    : 
+                    <Day key={climaDia.id} day={fechaActualizada.toLocaleDateString("en-EN", optionsDate)} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp.toFixed(1)} minTemp={climaDia.min_temp.toFixed(1)}/>
+                  ) 
                 })}
           </div>
           <section>
