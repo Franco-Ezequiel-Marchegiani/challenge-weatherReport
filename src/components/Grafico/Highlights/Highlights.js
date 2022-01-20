@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react';
 import './Highlights.css';
 import { ProgressBar } from 'react-bootstrap';
 
-function Highlights({idSeleccionadoPorUsuario}) {
+function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
+  console.log(idiomaPagina);
   const [climaSemanal, setClimaSemanal] = useState([""]);
   const [cargando, setCargando] = useState(true);
   useEffect( () =>{

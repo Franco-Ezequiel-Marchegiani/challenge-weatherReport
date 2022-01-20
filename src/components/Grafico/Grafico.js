@@ -45,7 +45,7 @@ function Grafico({idSeleccionadoPorUsuario, idiomaPagina}) {
                 : 
                 <h1 className='titleHighlights'>Today Highlights</h1> }
                 <div>
-                  <Highlights idSeleccionadoPorUsuario={idSeleccionadoPorUsuario}/>
+                  <Highlights idSeleccionadoPorUsuario={idSeleccionadoPorUsuario} idiomaPagina={idiomaPagina}/>
                 </div>
             </section>
         </main>
