@@ -62,7 +62,6 @@ function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
                 <h1>{climaSemanal[0].visibility.toFixed(1)} <span>Millas</span></h1>
             </div>
             <div className='hightLightItem airPressure'>
-                <p>Presión del aire</p>
                 {idiomaPagina === "spanish" ?
                 <p>Estado del viento</p>
                 :
