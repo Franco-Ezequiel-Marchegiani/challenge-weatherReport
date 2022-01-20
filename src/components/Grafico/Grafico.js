@@ -26,29 +26,28 @@ function Grafico({idSeleccionadoPorUsuario, idiomaPagina}) {
                 <p className='containerCGrafico'>°C</p>
                 <p className='containerFGrafico'>°F</p>
             </div>
-          <div className='daysContainer'>
-              { climaSemanal.length === 0 && <p>cargando...</p> }
-                {climaSemanal.map( (climaDia, i) =>{
-                  const fechaActualizada = new Date(climaDia.applicable_date);
-                  const optionsDate = {weekday: 'long', month: 'long', day: 'numeric'}
-                  return(
-                    idiomaPagina === "spanish" ? 
-                    <Day key={climaDia.id} day={fechaActualizada.toLocaleDateString("es-ES", optionsDate)} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp.toFixed(1)} minTemp={climaDia.min_temp.toFixed(1)}/> 
-                    : 
-                    <Day key={climaDia.id} day={fechaActualizada.toLocaleDateString("en-EN", optionsDate)} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp.toFixed(1)} minTemp={climaDia.min_temp.toFixed(1)}/>
-                  ) 
-                })}
-          </div>
-          <section>
-              {idiomaPagina === "spanish" ? 
-              <h1 className='titleHighlights'>Novedades del día</h1> 
-              : 
-              <h1 className='titleHighlights'>Today Highlights</h1> }
-              
-              <div>
-                 <Highlights idSeleccionadoPorUsuario={idSeleccionadoPorUsuario}/>
-              </div>
-          </section>
+            <div className='daysContainer'>
+                { climaSemanal.length === 0 && <p>cargando...</p> }
+                  {climaSemanal.map( (climaDia, i) =>{
+                    const fechaActualizada = new Date(climaDia.applicable_date);
+                    const optionsDate = {weekday: 'long', month: 'long', day: 'numeric'}
+                    return(
+                      idiomaPagina === "spanish" ? 
+                      <Day key={climaDia.id} day={fechaActualizada.toLocaleDateString("es-ES", optionsDate)} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp.toFixed(1)} minTemp={climaDia.min_temp.toFixed(1)}/> 
+                      : 
+                      <Day key={climaDia.id} day={fechaActualizada.toLocaleDateString("en-EN", optionsDate)} icon={climaDia.weather_state_abbr} maxTemp={climaDia.max_temp.toFixed(1)} minTemp={climaDia.min_temp.toFixed(1)}/>
+                    ) 
+                  })}
+            </div>
+            <section>
+                {idiomaPagina === "spanish" ? 
+                <h1 className='titleHighlights'>Novedades del día</h1> 
+                : 
+                <h1 className='titleHighlights'>Today Highlights</h1> }
+                <div>
+                  <Highlights idSeleccionadoPorUsuario={idSeleccionadoPorUsuario}/>
+                </div>
+            </section>
         </main>
         <Footer/>
     </section>
