@@ -66,7 +66,7 @@ function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
                 {idiomaPagina === "spanish" ?
                 <p>Estado del viento</p>
                 :
-                <p>Wind Status</p> }
+                <p>Air pressure</p> }
                 <h1>{climaSemanal[0].air_pressure.toFixed(0)} <span>mb</span></h1>
             </div>
       </section>
