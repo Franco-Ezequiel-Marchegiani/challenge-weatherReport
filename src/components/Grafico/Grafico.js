@@ -4,7 +4,6 @@ import Day from './Day/Day';
 import Highlights from './Highlights/Highlights';
 import Footer from './Footer/Footer';
 function Grafico({idSeleccionadoPorUsuario, idiomaPagina}) {
-  console.log(idiomaPagina);
   const [climaSemanal, setClimaSemanal] = useState([]);
   useEffect( () =>{
       apiDatos()
