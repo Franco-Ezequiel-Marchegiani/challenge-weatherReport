@@ -13,7 +13,6 @@ function useSideBar() {
   const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
   const [idSeleccionadoPorUsuario, setIdSeleccionadoPorUsuario] = useState("468739");
   const [idiomaPagina, setIdiomaPagina] = useState("spanish");
-  console.log(idiomaPagina);
   //Componente del padre para obtener información del hijo
   /* Configuracion mostrar y ocultar sidebars */
   const changeHideSidebar = () =>{
@@ -98,6 +97,7 @@ function useSideBar() {
   ]
   return {
     idSeleccionadoPorUsuario,
+    idiomaPagina,
     render:(
     <section className='sideBarContainer'>
         {sideBar ? 

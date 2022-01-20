@@ -4,11 +4,11 @@ import Grafico from './components/Grafico/Grafico';
 import useSideBar from './components/Sidebar/Sidebar';
 
 function App() {
-  const {render, idSeleccionadoPorUsuario} = useSideBar();
+  const {render, idSeleccionadoPorUsuario, idiomaPagina} = useSideBar();
   return (
     <section className='containerSidebar_Grafico'>
       {render}
-      <Grafico idSeleccionadoPorUsuario={idSeleccionadoPorUsuario}/>
+      <Grafico idSeleccionadoPorUsuario={idSeleccionadoPorUsuario} idiomaPagina={idiomaPagina} />
     </section>
   );
 }
