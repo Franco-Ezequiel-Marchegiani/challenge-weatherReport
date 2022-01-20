@@ -3,7 +3,6 @@ import './Highlights.css';
 import { ProgressBar } from 'react-bootstrap';
 
 function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
-  console.log(idiomaPagina);
   const [climaSemanal, setClimaSemanal] = useState([""]);
   const [cargando, setCargando] = useState(true);
   useEffect( () =>{
@@ -31,12 +30,19 @@ function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
       {
         <section className='hightLigtsContainer'>
             <div className='hightLightItem windStatus'>
+                {idiomaPagina === "spanish" ?
                 <p>Estado del viento</p>
+                :
+                <p>Wind Status</p> }
+                
                 <h1>{climaSemanal[0].wind_speed.toFixed(1)} <span>mph</span></h1>
                 <div className='containerIconHighLight'><i className="fas fa-location-arrow"></i><p>WSW</p></div>
             </div>
             <div className='hightLightItem humidity'>
-                <p>Humedad</p>
+                {idiomaPagina === "spanish" ?
+                <p>Estado del viento</p>
+                :
+                <p>Wind Status</p> }
                 <h1>{climaSemanal[0].humidity} <span>%</span></h1>
                   <div className='containerBarProgress'>
                       <p>0</p>
@@ -49,11 +55,18 @@ function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
                   </div>
             </div>
             <div className='hightLightItem visibility'>
+                {idiomaPagina === "spanish" ?
                 <p>Visibilidad</p>
+                :
+                <p>Wind Status</p> }
                 <h1>{climaSemanal[0].visibility.toFixed(1)} <span>Millas</span></h1>
             </div>
             <div className='hightLightItem airPressure'>
                 <p>Presión del aire</p>
+                {idiomaPagina === "spanish" ?
+                <p>Estado del viento</p>
+                :
+                <p>Wind Status</p> }
                 <h1>{climaSemanal[0].air_pressure.toFixed(0)} <span>mb</span></h1>
             </div>
       </section>
