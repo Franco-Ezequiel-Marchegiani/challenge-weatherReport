@@ -42,7 +42,7 @@ function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
                 {idiomaPagina === "spanish" ?
                 <p>Humedad</p>
                 :
-                <p>humidity</p> }
+                <p>Humidity</p> }
                 <h1>{climaSemanal[0].humidity} <span>%</span></h1>
                   <div className='containerBarProgress'>
                       <p>0</p>
@@ -58,7 +58,7 @@ function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
                 {idiomaPagina === "spanish" ?
                 <p>Visibilidad</p>
                 :
-                <p>Wind Status</p> }
+                <p>Visibility</p> }
                 <h1>{climaSemanal[0].visibility.toFixed(1)} <span>Millas</span></h1>
             </div>
             <div className='hightLightItem airPressure'>
