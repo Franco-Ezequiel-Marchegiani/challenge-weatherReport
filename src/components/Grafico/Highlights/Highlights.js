@@ -40,9 +40,9 @@ function Highlights({idSeleccionadoPorUsuario, idiomaPagina}) {
             </div>
             <div className='hightLightItem humidity'>
                 {idiomaPagina === "spanish" ?
-                <p>Estado del viento</p>
+                <p>Humedad</p>
                 :
-                <p>Wind Status</p> }
+                <p>humidity</p> }
                 <h1>{climaSemanal[0].humidity} <span>%</span></h1>
                   <div className='containerBarProgress'>
                       <p>0</p>
