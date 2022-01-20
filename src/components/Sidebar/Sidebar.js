@@ -12,7 +12,7 @@ function useSideBar() {
   const [listadoZonas, setListadoZonas] = useState([""]);
   const [filtradoBusqueda, setFiltradoBusqueda] = useState("");
   const [idSeleccionadoPorUsuario, setIdSeleccionadoPorUsuario] = useState("468739");
-  const [idiomaPagina, setIdiomaPagina] = useState(true);
+  const [idiomaPagina, setIdiomaPagina] = useState("spanish");
   console.log(idiomaPagina);
   //Componente del padre para obtener información del hijo
   /* Configuracion mostrar y ocultar sidebars */
@@ -106,9 +106,9 @@ function useSideBar() {
                   <button onClick={changeHideSidebar} className='btn-searchPlaces'>Buscar por zonas</button>
                   
                   <div className='btnContainerInterno'>
-                  {idiomaPagina === true ? <button onClick={()=> setIdiomaPagina(!idiomaPagina)} className='btn-changeLenguaje'><img className='iconLenguaje' src={EnglishIcon} alt="English Icon" /></button>
+                  {idiomaPagina === "spanish" ? <button onClick={()=> setIdiomaPagina("English")} className='btn-changeLenguaje'><img className='iconLenguaje' src={EnglishIcon} alt="English Icon" /></button>
                   :
-                  <button onClick={()=> setIdiomaPagina(!idiomaPagina)} className='btn-changeLenguaje'><img className='iconLenguaje' src={SpanishIcon} alt="English Icon" /></button>}
+                  <button onClick={()=> setIdiomaPagina("spanish")} className='btn-changeLenguaje'><img className='iconLenguaje' src={SpanishIcon} alt="English Icon" /></button>}
                   
                   <button onClick={changeHideSidebar} className='iconLocation'><i className="fas fa-search-location"></i></button>
                   </div>
