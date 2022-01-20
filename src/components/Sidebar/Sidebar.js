@@ -100,6 +100,7 @@ function useSideBar() {
           <section className='sideBarDefault'>
               <div className='btns-containers'>
                   <button onClick={changeHideSidebar} className='btn-searchPlaces'>Buscar por zonas</button>
+                  <p>hola</p>
                   <button onClick={changeHideSidebar} className='iconLocation'><i className="fas fa-search-location"></i></button>
               </div>
               <div className='iconTimeContainer'>
