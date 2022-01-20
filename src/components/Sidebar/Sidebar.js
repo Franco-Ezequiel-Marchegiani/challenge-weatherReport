@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './Sidebar.css';
 import { Spinner } from 'react-bootstrap';
 import EnglishIcon from '../../Images/united-states.svg';
+import SpanishIcon from '../../Images/spain.png';
 function useSideBar() {
   //Estados
   const [sideBar, setSideBar] = useState(true);
@@ -105,7 +106,10 @@ function useSideBar() {
                   <button onClick={changeHideSidebar} className='btn-searchPlaces'>Buscar por zonas</button>
                   
                   <div className='btnContainerInterno'>
-                  <button onClick={()=> setIdiomaPagina(!idiomaPagina)} className='btn-changeLenguaje'><img className='iconLenguaje' src={EnglishIcon} alt="English Icon" /></button>
+                  {idiomaPagina === true ? <button onClick={()=> setIdiomaPagina(!idiomaPagina)} className='btn-changeLenguaje'><img className='iconLenguaje' src={EnglishIcon} alt="English Icon" /></button>
+                  :
+                  <button onClick={()=> setIdiomaPagina(!idiomaPagina)} className='btn-changeLenguaje'><img className='iconLenguaje' src={SpanishIcon} alt="English Icon" /></button>}
+                  
                   <button onClick={changeHideSidebar} className='iconLocation'><i className="fas fa-search-location"></i></button>
                   </div>
               </div>
