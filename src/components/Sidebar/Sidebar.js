@@ -103,8 +103,10 @@ function useSideBar() {
         {sideBar ? 
           <section className='sideBarDefault'>
               <div className='btns-containers'>
-                  <button onClick={changeHideSidebar} className='btn-searchPlaces'>Buscar por zonas</button>
-                  
+                  {idiomaPagina === "spanish" ? <button onClick={changeHideSidebar} className='btn-searchPlaces'> Buscar por zonas</button> 
+                  : 
+                  <button onClick={changeHideSidebar} className='btn-searchPlaces'> Search Ubication</button>
+                  }
                   <div className='btnContainerInterno'>
                   {idiomaPagina === "spanish" ? <button onClick={()=> setIdiomaPagina("English")} className='btn-changeLenguaje'><img className='iconLenguaje' src={EnglishIcon} alt="English Icon" /></button>
                   :
@@ -134,7 +136,10 @@ function useSideBar() {
                 </div>
                 <div className='buscadorContainer'>
                     <i className="fas fa-search"></i>
-                    <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
+                    {idiomaPagina === "spanish" ? <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Buscar ubicación'/>
+                  : 
+                  <input onChange={tipeoUsuario} className='inputSearch' type="text" placeholder='Search Ubication'/>
+                  }
                     <button className='btn-search'>Buscar</button>
                 </div> 
                 {filtradoBusqueda === "" && 
