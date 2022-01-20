@@ -119,7 +119,9 @@ function useSideBar() {
               </div>
               <h1 className='titleTemperature'><span className='numberTemperature'>{cargando === true ? <p className='numberTemperatureLoading'>...</p> : climaDia[0].the_temp.toFixed(0) }</span><span className='c_temperature'>°c</span></h1>
               <h2 className='subTitle'>{climaDia[0].weather_state_name}</h2>
-              <p className='textDateToday'>Today <span className='pointSideBar'>•</span> {cargando === true ? "" : fechaActualizada.toLocaleDateString("es-ES", optionsDate) }</p>
+              {idiomaPagina === "spanish" ? <p className='textDateToday'>Hoy <span className='pointSideBar'>•</span> {cargando === true ? "" : fechaActualizada.toLocaleDateString("es-ES", optionsDate) }</p>
+              :
+              <p className='textDateToday'>Today <span className='pointSideBar'>•</span> {cargando === true ? "" : fechaActualizada.toLocaleDateString("en-EN", optionsDate) }</p>}
               <div className='containerUbication'>
                   <i className="fas fa-map-marker-alt"></i>
                   <p>{cargando === true ? <p>Cargando...</p> : infoClimaGeneral.title}</p>
