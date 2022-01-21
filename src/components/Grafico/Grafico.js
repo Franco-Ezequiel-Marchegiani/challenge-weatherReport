@@ -49,7 +49,7 @@ function Grafico({idSeleccionadoPorUsuario, idiomaPagina}) {
                 </div>
             </section>
         </main>
-        <Footer/>
+        <Footer idiomaPagina={idiomaPagina}/>
     </section>
   );
 }
