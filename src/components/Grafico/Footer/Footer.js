@@ -5,7 +5,12 @@ function Footer({idiomaPagina}) {
   console.log(idiomaPagina);
   return (
     <footer>
-        <p>Creado por <Link className='linkProfileFooter' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
+      {idiomaPagina === "spanish" ?
+      <p>Creado por <Link className='linkProfileFooter' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
+      :
+      <p>Created by <Link className='linkProfileFooter' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
+       }
+        
     </footer>
   );
 }
