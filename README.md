@@ -69,6 +69,7 @@ Aprendí la importancia de estar siempre metido en el código, y de practicar en
 - Se puede ver el porcentaje de humedad, y cuenta con una barra que indica el porcentaje del mismo
 - Se puede ver el número de la presión del aire
 - Posee un indicador de visibilidad
+- Cuenta con un botón para cambiar el lenguaje Español / Inglés
 
 #### Características técnicas
 
