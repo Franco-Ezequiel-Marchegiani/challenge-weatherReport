@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/challenge-weatherReport/static/css/main.f2f29449.css",
-    "main.js": "/challenge-weatherReport/static/js/main.99293e36.js",
+    "main.css": "/challenge-weatherReport/static/css/main.68acd5e9.css",
+    "main.js": "/challenge-weatherReport/static/js/main.98e998e0.js",
     "static/js/787.e54caa72.chunk.js": "/challenge-weatherReport/static/js/787.e54caa72.chunk.js",
     "static/media/Cloud-background.png": "/challenge-weatherReport/static/media/Cloud-background.f88244c26c2492e3c5f1.png",
+    "static/media/united-states.svg": "/challenge-weatherReport/static/media/united-states.6bfa3fc5dead5ace487f6cc7b35e269b.svg",
     "index.html": "/challenge-weatherReport/index.html",
-    "main.f2f29449.css.map": "/challenge-weatherReport/static/css/main.f2f29449.css.map",
-    "main.99293e36.js.map": "/challenge-weatherReport/static/js/main.99293e36.js.map",
+    "main.68acd5e9.css.map": "/challenge-weatherReport/static/css/main.68acd5e9.css.map",
+    "main.98e998e0.js.map": "/challenge-weatherReport/static/js/main.98e998e0.js.map",
     "787.e54caa72.chunk.js.map": "/challenge-weatherReport/static/js/787.e54caa72.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2f29449.css",
-    "static/js/main.99293e36.js"
+    "static/css/main.68acd5e9.css",
+    "static/js/main.98e998e0.js"
   ]
 }
