@@ -22,6 +22,10 @@ function useSideBar() {
     setSideBar(true)
   }
   /* Llamado API */
+  let url = process.env.REACT_APP_URL_BASE;
+  let urlExtension = process.env.REACT_APP_URL_EXTENSION;
+  console.log(url);
+  console.log(url + urlExtension + "/" + idSeleccionadoPorUsuario + "/");
   useEffect( () =>{
       apiDatos()
   },[idSeleccionadoPorUsuario]);
