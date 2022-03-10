@@ -32,6 +32,7 @@
 ## Vista_previa 
 
 ![screenshot](https://i.postimg.cc/7hfg0v4C/ej.png)
+![screenshot](gifMuestraClima.gif)
 
 
 - Dónde puedo ver la página funcionando?
