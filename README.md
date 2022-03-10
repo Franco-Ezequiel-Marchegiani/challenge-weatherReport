@@ -35,6 +35,7 @@
 ![screenshot](gifMuestraClima.gif)
 
 
+
 - Dónde puedo ver la página funcionando?
 La misma la encontrarás accediendo al <a href="https://franco-ezequiel-marchegiani.github.io/challenge-weatherReport/">siguiente link</a> 
 - Mi experiencia realizando el proyecto:
