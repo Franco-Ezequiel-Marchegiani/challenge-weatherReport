@@ -10,10 +10,10 @@ function Grafico({idSeleccionadoPorUsuario, idiomaPagina}) {
   },[idSeleccionadoPorUsuario])
   const apiDatos = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`,{
+    const data = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${idSeleccionadoPorUsuario}/`,{
       method: "GET",
       headers: {
-        "access-control-allow-origin" : "*",
+        "Access-Control-Allow-Origin" : "*",
         "Content-type": "application/json; charset=UTF-8"
       }});
     const climaJson =await data.json()

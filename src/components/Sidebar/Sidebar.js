@@ -47,7 +47,7 @@ function useSideBar() {
   },[idSeleccionadoPorUsuario]);
   const apiDatosGenerales = async() =>{
     //Json con los datos de Buenos Aires
-    const data = await fetch(`/api/location/${idSeleccionadoPorUsuario}/`,{
+    const data = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${idSeleccionadoPorUsuario}/`,{
       method: "GET",
       headers: {
         "access-control-allow-origin" : "*",
@@ -59,7 +59,7 @@ function useSideBar() {
   };
   const apiBuscador = async() =>{
     //Json con datos de barra de busqueda
-    const data = await fetch(`/api/location/search/?query=${filtradoBusqueda}`,{
+    const data = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${filtradoBusqueda}`,{
       method: "GET",
       headers: {
         "access-control-allow-origin" : "*",
